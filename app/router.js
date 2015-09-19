@@ -1,6 +1,6 @@
 define(function(require, exports, module) {
   var Backbone = require('backbone');
-  var MainView = require('views/main');
+  var MainView = require('views/home');
   var ChartView = require('views/chart');
 
   var Router = Backbone.Router.extend({

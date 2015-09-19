@@ -1,0 +1,42 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "id":"d3",
+            "type":"hbar",
+            "title":{
+                "text":"QA TESTING"
+            },
+            "plotarea": {
+                "margin-top":"22%",
+                "margin-right":"10%",
+                "margin-left":"18%",
+                "margin-bottom":"15%"
+            },
+            "series":[
+                {
+                    "values":[8,10,6],
+                    "palette":0
+                },
+            ],
+            "scale-x":{
+                "values":["ISO<br>9000","CMMI","Source<br>Code"]
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity"
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}

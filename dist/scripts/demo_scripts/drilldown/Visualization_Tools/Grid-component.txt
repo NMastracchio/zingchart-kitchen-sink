@@ -1,0 +1,42 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "id":"d3",
+            "type":"hbar",
+            "title":{
+                "text":"GRID COMPONENT"
+            },
+            "plotarea": {
+                "margin-top":"22%",
+                "margin-right":"10%",
+                "margin-left":"18%",
+                "margin-bottom":"15%"
+            },
+            "series":[
+                {
+                    "values":[8,5,2],
+                    "palette":3
+                },
+            ],
+            "scale-x":{
+                "values":["Punnett<br>square","Monohybrid<br>cross","Dihybrid<br>cross"]
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity"
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}

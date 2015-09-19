@@ -1,0 +1,50 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "id":"d2",
+            "type":"bar",
+            "title":{
+                "text":"SECURITY TOOLS"
+            },
+            "plotarea": {
+                "margin-top":"22%",
+                "margin-right":"10%",
+                "margin-left":"15%",
+                "margin-bottom":"15%"
+            },
+            "series":[
+                {
+                    "values":[35,15,25,10],
+                    "url":"./app/scripts/demo_scripts/drilldown/Security_Tools/%scale-key-value.txt",
+                    "palette":1,
+                    "target":"graph"
+                }
+            ],
+            "scale-x":{
+                "labels":["Firewall","Cache<br>control","Link<br>access","HTTP-Comp"],
+                "values":["Firewall","Cache-control","Link-access","HTTP-Comp"],
+                "label":{
+                    "text":"Type",
+                    "offset-y":-14
+                },
+                "items-overlap":true
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity"
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}

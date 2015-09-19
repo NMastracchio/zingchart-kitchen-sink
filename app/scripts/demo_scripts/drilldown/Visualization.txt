@@ -1,0 +1,49 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "id":"d2",
+            "type":"bar",
+            "title":{
+                "text":"VISUALIZATION TOOLS"
+            },
+            "plotarea": {
+                "margin-top":"22%",
+                "margin-right":"10%",
+                "margin-left":"15%",
+                "margin-bottom":"15%"
+            },
+            "series":[
+                {
+                    "values":[10,25,35],
+                    "url":"./app/scripts/demo_scripts/drilldown/Visualization_Tools/%scale-key-value.txt",
+                    "palette":3,
+                    "target":"graph"
+                }
+            ],
+            "scale-x":{
+                "labels":["Grid<br>component","Map-tool","Web<br>charting"],
+                "values":["Grid-component","Map-tool","Web-charting"],
+                "label":{
+                    "text":"Type",
+                    "offset-y":-14
+                }
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity"
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}

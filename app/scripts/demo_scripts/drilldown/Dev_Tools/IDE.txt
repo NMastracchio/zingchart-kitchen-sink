@@ -1,0 +1,42 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "id":"d3",
+            "type":"hbar",
+            "title":{
+                "text":"IDE"
+            },
+            "plotarea": {
+                "margin-top":"22%",
+                "margin-right":"10%",
+                "margin-left":"18%",
+                "margin-bottom":"15%"
+            },
+            "series":[
+                {
+                    "values":[6,15,2],
+                    "palette":0
+                },
+            ],
+            "scale-x":{
+                "values":["Compiler","Interpreter","Version<br>Control"]
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity"
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}

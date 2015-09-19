@@ -10,7 +10,7 @@
             "depth":25
         },
         "title":{
-            "text":"Isometric 3D Bar"
+            "text":"Isometric 3D"
         },
         "plotarea":{
             "background-color":"#fff"
@@ -35,19 +35,22 @@
       "data": {
         "type":"bar3d",
         "theme":"light",
+        "title": {
+            "text": "3D Facets"
+        },
         "plot":{
             "facets":{
                 "front":{
-                    "background-color":"#265E96"
+                    "background-color":"#D31E1E"
                 },
                 "right":{
-                    "background-color":"#1a4169"
+                    "background-color":"#29A2CC"
                 },
                 "left":{
-                    "background-color":"#517eab"
+                    "background-color":"#7CA82B"
                 },
                 "top":{
-                    "background-color":"#517eab"
+                    "background-color":"#EF8535"
                 },
                 "bottom":{
                     "background-color":"#29A2CC"
@@ -298,36 +301,16 @@
   {
     "render":{
       "data": {
-        "type":"bar",
+        "globals": {
+            "font-family":"Ubuntu"
+        },
+        "type":"line",
         "theme":"light",
         "title":{
-            "text":"Using Patterns with Rules"
+            "text":"Font Families"
         },
         "plotarea":{
             "background-color":"#fff"
-        },
-        "plot":{
-            "rules":[
-                {
-                    "rule":"%v <= 10",
-                    "background-color":"red"
-                },
-                {
-                    "rule":"%v > 10 && %v <= 20",
-                    "background-image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAF5JREFUWEftlDEOACAIA/n/p1USNYisdDoTHexQqQdmZmMtP77tWrvuxpVJvOvUb9Uqw1zwE7sk8vTlZfyHB8mDYCC2nyRyGNgD77Q9c4A5AAMwAAMwAAMwAAMwAAMTIjn2iP6kzQIAAAAASUVORK5CYII=",
-                    "background-color":"orange"
-                },
-                {
-                    "rule":"%v > 20 && %v <= 30",
-                    "background-image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAJBJREFUWEftl8EOwCAIQ/n/n3bTjGRpZF5W6AETTZSDWp4gZmbjbnNYPX3+3tQ3jw7BsNfd/FH+U3bGjVHxfJ8jczsAkQEE9E+7FgOZ9DsLGgwg7ZlKaDEQ0c5URIMB5js/xRktBpi+jlK9BgMdByp8r5ULOg5k/P06Duzqj7VWVhF1XeC16Clfs+1aDFTkhAu0ppboa2rAWgAAAABJRU5ErkJggg==",
-                    "background-color":"yellow"
-                },
-                {
-                    "rule":"%v > 30",
-                    "background-image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAGxJREFUWEftlDEOwDAIA/n/p4mIGhQptJ1MlhsyOcIGxJm729szC0mrXzWP5soAHZ2vyR4BOs2PCYT5VwCFnhPYjasQKn0G6DTM3T8XVprvn+QrUd/5X304AAfgAByAA3AADsABOAAH4MB1DgyYgHYXfCgvqQAAAABJRU5ErkJggg==",
-                    "background-color":"green"
-                }
-            ]
         },
         "scale-x":{
             "guide":{
@@ -342,13 +325,20 @@
         "series":[
             {
                 "values":[11,26,7,44,11,28,42,26,13,10,14,18],
-                "background-color":"#7ea1c2"
+                "line-color":"#EF8535",
+                "marker": {
+                    "background-color":"#EF8535",
+                    "size":8,
+                    "border-color":"#FFF"
+                },
+                "tooltip": {
+                    "font-size":18
+                }
             }
         ]
     },
-    "id":"patterns"
-    },
-    "script":""
+    "id":"fonts"
+    }
   },
   {
     "render":{
@@ -356,15 +346,54 @@
         "type":"null",
         "theme":"light",
         "title":{
-            "text":"Circle Shape"
+            "text":"Shapes"
         },
         "shapes":[
             {
                 "type":"circle",
-                "background-color":"#5297b6",
-                "size":80,
-                "x":300,
+                "background-color":"#FFEB3B",
+                "border-color":"#000",
+                "border-width":10,
+                "size":100,
+                "x":250,
                 "y":200
+            },
+            {
+                "type":"pie",
+                "background-color":"#FFF",
+                "border-color":"#000",
+                "border-width":5,
+                "size":100,
+                "x":250,
+                "y":300,
+                "angle":-90,
+                "angle-start":30,
+                "angle-end":-30,
+                "slice":55
+            },
+            {
+                "type":"circle",
+                "background-color":"#FFF",
+                "border-color":"#000",
+                "border-width":5,
+                "size":20,
+                "x":220,
+                "y":160,
+                "hover-state": {
+                    "background-color":"#000"
+                }
+            },
+            {
+                "type":"circle",
+                "background-color":"#FFF",
+                "border-color":"#000",
+                "border-width":5,
+                "size":20,
+                "x":280,
+                "y":160,
+                "hover-state": {
+                    "background-color":"#000"
+                }
             }
         ]
     },
@@ -381,17 +410,12 @@
         },
         "series":[
             {
-                "values":[11,26,7,44,11,28,4]
+                "values":[11,26,7,44,11,28,4],
+                "background-color":"#D31E1E #EF8535"
             }
         ],
         "scale-x":{
-            "values":["Jan","Feb","Mar","Apr","May","June"],
-            "label":{
-                "text":"Month",
-                "font-size":"20px",
-                "gradient-colors":"#FF5400 #FAFF6B #FF9D14",
-                "gradient-stops":"0.1 0.5 0.7"
-            }
+            "values":["Jan","Feb","Mar","Apr","May","June"]
         }
     },
     "id":"gradients"

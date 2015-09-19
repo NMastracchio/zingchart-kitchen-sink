@@ -101,7 +101,9 @@ body {
   padding-left: 16px;
   height:40px;
   font-weight:none;
-  appearance:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 label.select-appearance {
@@ -125,11 +127,11 @@ label.select-appearance {
   }
 }
 
-#loading-shutter {
+#loading-shutter { 
   height: 1080px;
   width: 1920px;
   background-color: #000;
-  position:absolute;
+  position:fixed;
   top: 0px;
   left:0px;
   z-index:2;
@@ -148,5 +150,49 @@ label.select-appearance {
   cursor: pointer;
   color: #1FBBED;
   font-weight:bold;
-  padding:8px;
+  height:28px;
+  display:block;
+  line-height:28px;
+  padding:0 10px;
+  margin-top:5px;
+}
+
+.aspect-select {
+  background-color: white; 
+  color: #1FBBED;
+  font-size:13pt;
+  border-width: 1px;
+  border-radius:6px;
+  border-color: rgba(255,255,255,0.5);
+  margin-top:5px;
+  padding: 0 10px;
+  height:30px;
+  font-weight:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+label.aspect-select-appearance {
+  position:relative;
+  &:after {
+    content:'▾';
+    font:14px "Roboto", monospace;
+    color:#1FBBED;
+    right:16px; 
+    top:0;
+    padding:0 0 2px;
+    position:absolute;
+    pointer-events:none;
+  }
+  &:before {
+    content:'';
+    right:6px; 
+    top:10px;
+    width:20px; 
+    height:20px;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+  }
 }

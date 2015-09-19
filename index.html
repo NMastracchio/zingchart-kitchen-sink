@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Kitchen Sink v2.0.0 (Backbone.js Edition)</title>
   <!--<link rel="stylesheet" href="./css/zingchart_common.css">-->
-  <link rel="stylesheet" href="./app/styles/main.css">
+  <link rel="stylesheet" href="./dist/styles/common.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -83,7 +83,7 @@
       </div>
       <label class="select-appearance">
         <select id="theme-picker">
-          <option value="light" selected>Light</option> 
+          <option value="zingchart" selected>Light</option> 
           <option value="dark">Dark</option>
           <option value="windows-xp">Windows XP</option>
         </select>
@@ -116,11 +116,13 @@
                     <% _.each(chart.options['select-labels'], function(label, idx){ %>
                       <div class="flex-item">
                         <label> <%= label %> </label>
-                        <select class="aspect-select" id="<%= chart.render.id + '-aspect' %>">
-                          <% _.each(chart.options.selects[idx], function(optionObj){ %>
-                            <option value="<%= optionObj.value %>"> <%= optionObj.label %> </option>
-                          <% }) %>
-                        </select>
+                        <label class="aspect-select-appearance">
+                          <select class="aspect-select" id="<%= chart.render.id + '-aspect' %>">
+                            <% _.each(chart.options.selects[idx], function(optionObj){ %>
+                              <option value="<%= optionObj.value %>"> <%= optionObj.label %> </option>
+                            <% }) %>
+                          </select>
+                        </label>
                       </div>
                     <% }) %>
                   <% } %>
@@ -152,20 +154,24 @@
                 <% } %>
                 <% if (chart.options.types) { %>
                   <div class="flex-item">
-                    <label>Type 1: </label>
-                    <select id="<%= chart.render.id + '-type1' %>">
-                      <% _.each(chart.options.types, function(type) { %>
-                        <option value="<%= type.value %>"><%= type.label %></option>
-                      <% }) %>
-                    </select>
+                    <label>Primary Type: </label>
+                    <label class="aspect-select-appearance">
+                      <select class="aspect-select" id="<%= chart.render.id + '-type1' %>">
+                        <% _.each(chart.options.types, function(type) { %>
+                          <option value="<%= type.value %>"><%= type.label %></option>
+                        <% }) %>
+                      </select>
+                    </label>
                   </div>
                   <div class="flex-item">
-                    <label>Type 2: </label>
-                    <select id="<%= chart.render.id + '-type2' %>">
-                      <% _.each(chart.options['types-2'], function(type) { %>
-                        <option value="<%= type.value %>"><%= type.label %></option>
-                      <% }) %>
-                    </select>
+                    <label>Secondary Type: </label>
+                    <label class="aspect-select-appearance">
+                      <select class="aspect-select" id="<%= chart.render.id + '-type2' %>">
+                        <% _.each(chart.options['types-2'], function(type) { %>
+                          <option value="<%= type.value %>"><%= type.label %></option>
+                        <% }) %>
+                      </select>
+                    </label>
                   </div>
                 <% } %>
               </div>

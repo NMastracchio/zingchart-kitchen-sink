@@ -1,0 +1,42 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "id":"d3",
+            "type":"hbar",
+            "title":{
+                "text":"USER MONITORING"
+            },
+            "plotarea": {
+                "margin-top":"22%",
+                "margin-right":"10%",
+                "margin-left":"18%",
+                "margin-bottom":"15%"
+            },
+            "series":[
+                {
+                    "values":[6,4,8],
+                    "palette":4
+                },
+            ],
+            "scale-x":{
+                "values":["Real user<br>interaction","Passive<br>monitoring","Incident<br>manager"]
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity"
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}

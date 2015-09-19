@@ -3,7 +3,7 @@
     "render":{
       "id": "countriesMap",
       "data": {
-        "theme": "dark",
+        "theme": "zingchart",
         "title":{
           "text":"Planet Earth"
         },
@@ -30,7 +30,7 @@
     "render":{
       "id": "usaMap",
       "data": {
-        "theme": "light",
+        "theme": "zingchart",
         "title":{
           "text":"United States"
         },
@@ -55,7 +55,7 @@
     "render":{
       "id":"californiaMap",
       "data":{
-        "theme": "light",
+        "theme": "zingchart",
         "title":{
           "text":"California Counties"
         },
@@ -82,6 +82,6 @@
       "id":"geoJson",
       "data":{}
     },
-    "script":"./sink/chart_scripts/geoJson.js"
+    "script":"./app/scripts/demo_scripts/geoJson.js"
   }
 ]

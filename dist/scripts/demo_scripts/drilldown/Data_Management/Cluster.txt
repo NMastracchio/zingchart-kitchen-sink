@@ -1,0 +1,42 @@
+{
+    "history":{
+        "y":"40px"
+    },
+    "graphset":[
+        {
+            "id":"d3",
+            "type":"hbar",
+            "title":{
+                "text":"CLUSTER"
+            },
+            "plotarea": {
+                "margin-top":"22%",
+                "margin-right":"10%",
+                "margin-left":"18%",
+                "margin-bottom":"15%"
+            },
+            "series":[
+                {
+                    "values":[1,4,3],
+                    "palette":2
+                },
+            ],
+            "scale-x":{
+                "values":["Linux<br>Cluster","Apache<br>Mesos","SCMS"]
+            },
+            "scale-y":{
+                "guide":{
+                    "visible":false
+                },
+                "label":{
+                    "text":"Quantity"
+                }
+            },
+            "tooltip":{
+                "text":"Quantity: %v",
+                "border-radius":"3px",
+                "shadow":false
+            }
+        }
+    ]
+}

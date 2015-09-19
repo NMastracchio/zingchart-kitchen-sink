@@ -5,7 +5,7 @@ module.exports = function(grunt){
     sass: {
       dist: {
         files: {
-          'css/common.css': 'css/common.scss'
+          'app/styles/common.css': 'app/styles/common.scss'
         }
       }
     },
@@ -22,10 +22,19 @@ module.exports = function(grunt){
         ],
         tasks: ['sass', 'autoprefixer', 'requirejs']
       },
+      src: {
+        files: [
+          '/Users/nmastracchio/Documents/ZingChart/zingchart-dev/src/*',
+          '/Users/nmastracchio/Documents/ZingChart/zingchart-dev/src/*/*',
+          '/Users/nmastracchio/Documents/ZingChart/zingchart-dev/src/*/*/*'
+        ],
+        tasks: ['shell']
+      },
       scripts: {
         files: [
           'app/*',
-          'app/*/*'
+          'app/*/*',
+          'app/*/*/*'
         ],
         tasks: ['requirejs']
       }
@@ -39,6 +48,21 @@ module.exports = function(grunt){
           mainConfigFile: 'app/config.js'
         }
       }
+    },
+    shell: {
+      options: {
+        stderr: false
+      },
+      target: {
+        command: 'cd /Users/nmastracchio/Documents/ZingChart/zingchart-dev/build/;' 
+          + 'php index.php -DEV;' 
+          + 'cp zingchart.min.js /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client;'
+          + 'cp -r modules/* /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules;'
+          + 'mv /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-populationpyramid.js ' 
+          + '/Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-populationpyramid.min.js;'
+          + 'mv /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-waterfall.js ' 
+          + '/Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-waterfall.min.js'
+      }
     }
   });
 
@@ -46,6 +70,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-shell');
 
   //grunt.registerTask('default', ['sass', 'autoprefixer']);
   grunt.registerTask('default', ['watch']);

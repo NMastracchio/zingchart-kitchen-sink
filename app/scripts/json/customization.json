@@ -3,10 +3,9 @@
         "render": {
             "data": {
                 "type": "bar",
-                "theme": "light",
+                "theme": "zingchart",
                 "title": {
-                    "text": "JavaScript Rules",
-                    "adjust-layout": true
+                    "text": "JavaScript Rules"
                 },
                 "scale-x": {
                     "min-value": 1435708800000,
@@ -36,10 +35,6 @@
                     "marker": {
                         "type": "none"
                     }
-                },
-                "plotarea": {
-                    "adjust-layout": true,
-                    "margin-right": 35
                 },
                 "tooltip": {
                     "js-rule": "myfunc()",
@@ -200,81 +195,10 @@
                     }
                 ]
             },
-            "id": "jsRules"
+            "id": "jsRules",
+            "width":1235
         },
-        "script": "./sink/chart_scripts/jsRules.js"
-    },
-    {
-        "render": {
-            "data": {
-                "backgroundColor": "#221F1F",
-                "type": "null",
-                "widgets": [
-                    {
-                        "type": "dashboard_datetime",
-                        "width": 240,
-                        "height": 240,
-                        "x": 10,
-                        "y": 10,
-                        "id": "dash1",
-                        "title": "NEW YORK",
-                        "backgroundColor1": "#55154D",
-                        "backgroundColor2": "#44043C"
-                    },
-                    {
-                        "type": "dashboard_metric",
-                        "width": 240,
-                        "height": 240,
-                        "x": 260,
-                        "y": 10,
-                        "title": "VIRAL COEFFICIENT",
-                        "value": 813.74,
-                        "percent": "+11.52",
-                        "id": "dash2",
-                        "backgroundColor1": "#67001F",
-                        "backgroundColor2": "#56000E"
-                    },
-                    {
-                        "type": "dashboard_accounts",
-                        "width": 240,
-                        "height": 240,
-                        "x": 510,
-                        "y": 10,
-                        "id": "dash3"
-                    },
-                    {
-                        "type": "dashboard_metric",
-                        "width": 240,
-                        "height": 240,
-                        "x": 10,
-                        "y": 260,
-                        "title": "RETENTION RATE (30 DAYS)",
-                        "value": 83.18,
-                        "percent": -21.27,
-                        "id": "dash4",
-                        "backgroundColor1": "#014358",
-                        "backgroundColor2": "#003247"
-                    },
-                    {
-                        "type": "dashboard_metric",
-                        "width": 490,
-                        "height": 240,
-                        "x": 260,
-                        "y": 260,
-                        "title": "AVG TIME ON SITE",
-                        "value": "487.32",
-                        "percent": 4.37,
-                        "id": "dash5",
-                        "backgroundColor1": "#264031",
-                        "backgroundColor2": "#22392b"
-                    }
-                ]
-            },
-            "id": "widgets",
-            "height": 510,
-            "width": 760
-        },
-        "script": "./sink/chart_scripts/widgets.js"
+        "script": "./app/scripts/demo_scripts/jsRules.js"
     },
     {
         "render": {
@@ -282,12 +206,8 @@
                 "type": "line",
                 "theme":"light",
                 "title":{
-                  "text":"Rules"
+                  "text":"Native Rules"
                   },
-                "plotarea": {
-                    "margin-right": 50,
-                    "margin-bottom": 50
-                },
                 "scroll-x": {
                 },
                 "crosshair-x": {
@@ -1185,6 +1105,78 @@
         }
     },
     {
+        "render": {
+            "data": {
+                "backgroundColor": "#221F1F",
+                "type": "null",
+                "widgets": [
+                    {
+                        "type": "dashboard_datetime",
+                        "width": 240,
+                        "height": 240,
+                        "x": 10,
+                        "y": 10,
+                        "id": "dash1",
+                        "title": "NEW YORK",
+                        "backgroundColor1": "#55154D",
+                        "backgroundColor2": "#44043C"
+                    },
+                    {
+                        "type": "dashboard_metric",
+                        "width": 240,
+                        "height": 240,
+                        "x": 260,
+                        "y": 10,
+                        "title": "VIRAL COEFFICIENT",
+                        "value": 813.74,
+                        "percent": "+11.52",
+                        "id": "dash2",
+                        "backgroundColor1": "#67001F",
+                        "backgroundColor2": "#56000E"
+                    },
+                    {
+                        "type": "dashboard_accounts",
+                        "width": 240,
+                        "height": 240,
+                        "x": 510,
+                        "y": 10,
+                        "id": "dash3"
+                    },
+                    {
+                        "type": "dashboard_metric",
+                        "width": 240,
+                        "height": 240,
+                        "x": 10,
+                        "y": 260,
+                        "title": "RETENTION RATE (30 DAYS)",
+                        "value": 83.18,
+                        "percent": -21.27,
+                        "id": "dash4",
+                        "backgroundColor1": "#014358",
+                        "backgroundColor2": "#003247"
+                    },
+                    {
+                        "type": "dashboard_metric",
+                        "width": 490,
+                        "height": 240,
+                        "x": 260,
+                        "y": 260,
+                        "title": "AVG TIME ON SITE",
+                        "value": "487.32",
+                        "percent": 4.37,
+                        "id": "dash5",
+                        "backgroundColor1": "#264031",
+                        "backgroundColor2": "#22392b"
+                    }
+                ]
+            },
+            "id": "widgets",
+            "height": 400,
+            "width": 1235
+        },
+        "script": "./app/scripts/demo_scripts/widgets.js"
+    },
+    {
       "render":{
         "data": {
         "theme":"light",
@@ -1260,6 +1252,288 @@
         "id":"weightedAverage",
         "modules":"dwa"
       },
-      "script":"./sink/chart_scripts/dwa.js"
+      "script":"./app/scripts/demo_scripts/dwa.js"
+    },
+    {
+      "render":{
+        "data":{
+          "title": {
+            "text":"Custom Choropleth Module"  
+          },
+          "subtitle":{
+            "text": "Average Mobile Network Speed"
+          },
+          "type":"choropleth",
+          "options": {
+            "map":"world.countries",
+            "scale": {
+              "type":"threshold",
+              "domain": [2,5,10,20],
+              "range": ["#feebe2","#fbb4b9","#f768a1","#c51b8a","#7a0177"]
+            },
+            "style": {
+              "hover-state": {
+                "background-color": "#FFF",
+                "alpha": 0.1,
+                "border-color": "#333",
+                "border-width": 2
+              },
+              "background-color":"#F0F0F0",
+              "border-width":"none",
+              "shadow": false,
+              "label": {
+                "visible":false
+              },
+              "tooltip": {
+                "shadow":false
+              }
+            },
+            "items": [
+              {
+                "name": "EGY",
+                "value": 2.6
+              },
+              {
+                "name": "MAR",
+                "value": 4.8
+              },
+              {
+                "name": "ZAF",
+                "value": 2.5
+              },
+              {
+                "name": "AUS",
+                "value": 7.6
+              },
+              {
+                "name": "CHN",
+                "value": 4.7
+              },
+              {
+                "name": "HKG",
+                "value": 6.5
+              },
+              {
+                "name": "IND",
+                "value": 2.8
+              },
+              {
+                "name": "IDN",
+                "value": 1.7
+              },
+              {
+                "name": "IRN",
+                "value": 1.8
+              },
+              {
+                "name": "ISR",
+                "value": 5.5
+              },
+              {
+                "name": "JPN",
+                "value": 7.7
+              },
+              {
+                "name": "KAZ",
+                "value": 2.3
+              },
+              {
+                "name": "MYS",
+                "value": 2.7
+              },
+              {
+                "name": "NPL",
+                "value": 4.0
+              },
+              {
+                "name": "NCL",
+                "value": 1.7
+              },
+              {
+                "name": "NZL",
+                "value": 7.0
+              },
+              {
+                "name": "OMN",
+                "value": 3.0
+              },
+              {
+                "name": "PAK",
+                "value": 1.9
+              },
+              {
+                "name": "SGP",
+                "value": 7.5
+              },
+              {
+                "name": "KOR",
+                "value": 8.8
+              },
+              {
+                "name": "LKA",
+                "value": 3.4
+              },
+              {
+                "name": "SYR",
+                "value": 2.2
+              },
+              {
+                "name": "TWN",
+                "value": 5.1
+              },
+              {
+                "name": "THA",
+                "value": 2.5
+              },
+              {
+                "name": "ARE",
+                "value": 4.8
+              },
+              {
+                "name": "VNM",
+                "value": 1.3
+              },
+              {
+                "name": "AUT",
+                "value": 6.3
+              },
+              {
+                "name": "BEL",
+                "value": 5.8
+              },
+              {
+                "name": "HRV",
+                "value": 2.9
+              },
+              {
+                "name": "CZE",
+                "value": 5.5
+              },
+              {
+                "name": "DNK",
+                "value": 10.0
+              },
+              {
+                "name": "FRA",
+                "value": 7.9
+              },
+              {
+                "name": "DEU",
+                "value": 5.7
+              },
+              {
+                "name": "HUN",
+                "value": 3.7
+              },
+              {
+                "name": "ISL",
+                "value": 5.0
+              },
+              {
+                "name": "IRL",
+                "value": 7.4
+              },
+              {
+                "name": "ITA",
+                "value": 6.1
+              },
+              {
+                "name": "LTU",
+                "value": 4.7
+              },
+              {
+                "name": "MDA",
+                "value": 5.1
+              },
+              {
+                "name": "NLD",
+                "value": 5.5
+              },
+              {
+                "name": "NOR",
+                "value": 6.9
+              },
+              {
+                "name": "POL",
+                "value": 5.6
+              },
+              {
+                "name": "RUS",
+                "value": 7.5
+              },
+              {
+                "name": "SVK",
+                "value": 8.4
+              },
+              {
+                "name": "ESP",
+                "value": 7.7
+              },
+              {
+                "name": "SWE",
+                "value": 8.9
+              },
+              {
+                "name": "TUR",
+                "value": 7.7
+              },
+              {
+                "name": "UKR",
+                "value": 8.1
+              },
+              {
+                "name": "GBR",
+                "value": 20.4
+              },
+              {
+                "name": "CAN",
+                "value": 5.3
+              },
+              {
+                "name": "SLV",
+                "value": 3.0
+              },
+              {
+                "name": "USA",
+                "value": 4.0
+              },
+              {
+                "name": "ARG",
+                "value": 1.8
+              },
+              {
+                "name": "BOL",
+                "value": 2.0
+              },
+              {
+                "name": "BRA",
+                "value": 2.5
+              },
+              {
+                "name": "CHL",
+                "value": 2.5
+              },
+              {
+                "name": "COL",
+                "value": 2.5
+              },
+              {
+                "name": "PRY",
+                "value": 4.1
+              },
+              {
+                "name": "URY",
+                "value": 5.4
+              },
+              {
+                "name": "VEN",
+                "value": 7.0
+              }
+            ]
+          }
+        },
+        "id":"choropleth"
+      },
+      "script":"./app/scripts/demo_scripts/choropleth.js"
     }
 ]

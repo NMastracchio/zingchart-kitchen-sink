@@ -997,7 +997,165 @@
     }
 ]
 },
-      "id": "sharedFeatures"
+      "id": "sharedFeatures",
+      "height":860,
+      "width":1235
     }
-  } 
+  },
+  {
+    "render":{
+      "data":{
+        "history": {
+            "y": "40px",
+            "item-on":{
+              "background-color":"#29A2CC",
+              "border-width":1,
+              "border-color":"#fff"
+            }
+        },
+        "graphset": [{
+            "id": "d1",
+            "type": "pie",
+            "title": {
+                "text": "Chart Drill Down"
+            },
+            "subtitle": {
+                "text": "Click a category to view tools!"
+            },
+            "plot": {
+                "detach": false,
+                "value-box":{
+                  "text":"%t",
+                  "font-size":10
+                }
+            },
+            "scale":{
+              "size-factor":0.8
+            },
+            "series": [{
+                "text": "Dev<br>Tools",
+                "values": [15],
+                "url": "./app/scripts/demo_scripts/drilldown/Dev.txt",
+                "target": "graph=d1"
+            }, {
+                "text": "Security<br>Tools",
+                "values": [10],
+                "url": "./app/scripts/demo_scripts/drilldown/Security.txt",
+                "target": "graph=d1"
+            }, {
+                "text": "Data<br>Management",
+                "values": [25],
+                "url": "./app/scripts/demo_scripts/drilldown/Data.txt",
+                "target": "graph=d1"
+            }, {
+                "text": "Visualization<br>Tools",
+                "values": [20],
+                "url": "./app/scripts/demo_scripts/drilldown/Visualization.txt",
+                "target": "graph=d1"
+            }, {
+                "text": "Site<br>Performance",
+                "values": [25],
+                "url": "./app/scripts/demo_scripts/drilldown/Site.txt",
+                "target": "graph=d1"
+            }],
+            "tooltip": {
+                "text": "%v %",
+                "shadow": false
+            }
+        }]
+      },
+      "id":"drilldown1"
+    }
+  },
+  {
+    "render":{
+      "data":{
+        "graphset": [{
+            "id": "years",
+            "x": "0%",
+            "y": "0%",
+            "width": "100%",
+            "height": "40%",
+            "type": "bar",
+            "title": {
+                "text": "Parent Child Drilldown"
+            },
+            "plotarea": {
+                "margin-top": 50,
+                "margin-right": 30,
+                "margin-bottom": 40,
+                "margin-left": 50
+            },
+            "scale-x": {
+                "values": "1994:2014",
+                "max-items": 99,
+                "guide": {
+                    "visible": false
+                }
+            },
+            "plot": {
+                "bars-overlap": "100%",
+                "rules": []
+            },
+            "scale-y": {
+                "values": "0:150:25",
+                "min-value": 0,
+                "guide": {
+                    "visible": false
+                }
+            },
+            "series": [{
+                "values": [81, 106, 110, 114, 133, 108, 101, 120, 116, 113, 123, 130, 132, 124, 128, 122, 115, 104, 123, 146, 113],
+                "url": "./app/scripts/demo_scripts/drilldown/data-months.php?year=%scale-key-value&filepath=./app/scripts/demos_scripts/drilldown/demo_scripts",
+                "target": "graph=months",
+                "z-index": 1
+            }, {
+                "values": [150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150],
+                "background-color": "#E8E7E8",
+                "maxTrackers": 0,
+                "z-index": 0
+            }]
+        }, {
+            "id": "months",
+            "x": "0%",
+            "y": "40%",
+            "width": "100%",
+            "height": "30%",
+            "type": "null",
+            "labels": [{
+                "text": "Click on a YEAR above to view monthly stats",
+                "width": "70%",
+                "height": 40,
+                "margin": "auto auto",
+                "border-width": 1,
+                "border-radius": 2,
+                "padding": 20,
+                "background-color": "#f9f9f9"
+            }]
+        }, {
+            "id": "days",
+            "x": "0%",
+            "y": "70%",
+            "width": "100%",
+            "height": "30%",
+            "type": "null",
+            "scale-x": {
+                "max-labels": 16
+            },
+            "labels": [{
+                "text": "Click on a MONTH above to view daily stats",
+                "width": "70%",
+                "height": 40,
+                "height": 40,
+                "margin": "auto auto",
+                "border-width": 1,
+                "border-radius": 2,
+                "padding": 20,
+                "background-color": "#f9f9f9"
+            }]
+        }]
+      },
+      "id":"drilldown2"
+    }
+  }
 ]

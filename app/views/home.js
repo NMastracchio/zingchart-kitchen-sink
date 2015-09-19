@@ -20,7 +20,9 @@ define(function(require, exports, module){
       $('#loading-shutter').animate({
         top: "+=1080"
       },500, function(){
+        var router = require('../main');
         var routeName = $(event.target).data('route');
+        console.log(router);
         router.navigate(routeName, {trigger: true});
       });
     },
@@ -46,9 +48,9 @@ define(function(require, exports, module){
       router.currentView.destroyCharts();
 
       switch(val){
-        case 'light':
+        case 'zingchart':
           collection.each(function(chart){
-            applyTheme(chart, 'light');
+            applyTheme(chart, 'zingchart');
           });
           router.currentView.render();
           break;
@@ -60,7 +62,7 @@ define(function(require, exports, module){
           break;
         case 'windows-xp':
           collection.each(function(chart){
-            applyTheme(chart, 'default');
+            applyTheme(chart, 'classic');
           });
           router.currentView.render();
           break;
