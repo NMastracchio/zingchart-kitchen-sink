@@ -17,11 +17,7 @@
     "nodemon": "^1.4.1"
   },
   "dependencies": {
-    "backbone": "^1.2.3",
     "express": "^4.13.3",
-    "jquery": "^2.1.4",
-    "lodash": "^3.10.1",
-    "lodash-template-loader": "^1.0.1",
     "zingchart": "^2.1.3"
   }
 }
