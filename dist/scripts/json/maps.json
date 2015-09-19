@@ -1,0 +1,87 @@
+[
+  {
+    "render":{
+      "id": "countriesMap",
+      "data": {
+        "theme": "dark",
+        "title":{
+          "text":"Planet Earth"
+        },
+        "subtitle":{
+          "text":"Solar System, Milky Way Galaxy, Universe, Dimension C137"
+        },
+        "shapes":[
+          {
+            "type":"zingchart.maps",
+            "options":{
+              "name":"world.countries",
+              "style":{
+                "label":{
+                  "visible":false
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "render":{
+      "id": "usaMap",
+      "data": {
+        "theme": "light",
+        "title":{
+          "text":"United States"
+        },
+        "shapes":[
+          {
+            "type":"zingchart.maps",
+            "options":{
+              "name":"usa",
+              "offset-y":20,
+              "style":{
+                "label":{
+                  "visible":false
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "render":{
+      "id":"californiaMap",
+      "data":{
+        "theme": "light",
+        "title":{
+          "text":"California Counties"
+        },
+        "shapes":[
+          {
+            "type":"zingchart.maps",
+            "options":{
+              "name":"usa_ca",
+              "zoom":0.8,
+              "offset-y":10,
+              "style":{
+                "label":{
+                  "visible":false
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "render":{
+      "id":"geoJson",
+      "data":{}
+    },
+    "script":"./sink/chart_scripts/geoJson.js"
+  }
+]

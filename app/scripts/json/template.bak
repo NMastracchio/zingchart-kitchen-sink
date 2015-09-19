@@ -1,0 +1,57 @@
+<% if (chart.options && Object.keys(chart.options).length > 0) { %>
+              <div class="flex-container">
+                <% if (chart.options.aspects) { %>
+                  <div class="flex-item">
+                    <select class="aspect-select" id="<%= chart.render.id + '-aspect' %>">
+                    <% _.each(chart.options.aspects, function(aspect) { %>
+                      <option value="<%= aspect.value %>"><%= aspect.label %></option>
+                    <% }) %>
+                    </select>
+                  </div>
+                <% } %>
+                <% if (chart.options.thirdDimension) { %>
+                  <div class="flex-item">
+                    <a id="<%= chart.render.id + '-3d' %>" data-zc-button="white">
+                      Go <%= (chart.states.is3d) ? '2D' : '3D' %>
+                    </a>
+                  </div>
+                <% } %>
+                <% if (chart.options.orientation) { %>
+                  <div class="flex-item">
+                    <a id="<%= chart.render.id + '-rotate' %>" data-zc-button="white">Rotate</a>
+                  </div>
+                <% } %>
+                <% if (chart.options.markers) { %>
+                  <div class="flex-item">
+                    <a id="<%= chart.render.id + '-markers' %>" data-zc-button="white">
+                      Cycle Marker Types
+                    </a>
+                  </div>
+                <% } %>
+                <% if (chart.options.stack) { %>
+                  <div class="flex-item">
+                    <a id="<%= chart.render.id + '-stack' %>" data-zc-button="white">
+                      Change Stack Type
+                    </a>
+                  </div>
+                <% } %>
+                <% if (chart.options.types) { %>
+                  <div class="flex-item">
+                    <label>Type 1: </label>
+                    <select id="<%= chart.render.id + '-type1' %>">
+                      <% _.each(chart.options.types, function(type) { %>
+                        <option value="<%= type.value %>"><%= type.label %></option>
+                      <% }) %>
+                    </select>
+                  </div>
+                  <div class="flex-item">
+                    <label>Type 2: </label>
+                    <select id="<%= chart.render.id + '-type2' %>">
+                      <% _.each(chart.options['types-2'], function(type) { %>
+                        <option value="<%= type.value %>"><%= type.label %></option>
+                      <% }) %>
+                    </select>
+                  </div>
+                <% } %>
+              </div>
+            <% } %>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kitchen Sink v2.0.0 (Backbone.js Edition)</title>
+  <!--<link rel="stylesheet" href="./css/zingchart_common.css">-->
+  <link rel="stylesheet" href="./app/styles/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+​
+  <div id="zc-kitchen-sink"></div>
+​
+  <!-- ZingChart -->
+  <script src="./node_modules/zingchart/client/zingchart.min.js"></script>
+  
+  <script>
+    zingchart.MODULESDIR = "./node_modules/zingchart/client/modules/";
+  </script>
+  
+  <!-- ZingChart Modules -->
+  <!--<script src="./node_modules/zingchart/client/modules/zingchart-boxplot.js"></script>-->
+  <script src="./node_modules/zingchart/client/modules/zingchart-calendar.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-chord.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-dragging.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-grid.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-pareto.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-patterns.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-populationpyramid.min.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-rankflow.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-treemap.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-toolbar3d.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-wordcloud.js"></script>
+  
+  <!-- ZingChart Map Modules -->
+  <script src="./node_modules/zingchart/client/modules/zingchart-maps.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-maps-geojson.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-maps-usa.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-maps-usa_ca.js"></script>
+  <script src="./node_modules/zingchart/client/modules/zingchart-maps-world-countries.js"></script>
+  
+  
+  
+  
+  
+​
+  <script type="text/template" id="SinkTemplate">
+    <div id="loading-shutter">
+      <div class="shutter-content">
+        Loading...
+      </div>
+    </div>
+    <div class="main-nav">
+    <div class="zc-logo"></div>
+    <h1>Kitchen Sink</h1>
+      <div class="flex-nav">
+        <ul class="flex-nav-list">
+          <li class="flex-nav-list-item" data-route="charts">
+            Standard Charts
+          </li>
+          <li class="flex-nav-list-item" data-route="visualizations">
+            Visualizations
+          </li>
+          <li class="flex-nav-list-item" data-route="maps">
+            Maps
+          </li>
+          <li class="flex-nav-list-item" data-route="interactive">
+            Interactive
+          </li>
+          <li class="flex-nav-list-item" data-route="markers">
+            Markers, Labels, &amp; Formatting
+          </li>
+          <li class="flex-nav-list-item" data-route="design">
+            Design
+          </li>
+          <li class="flex-nav-list-item" data-route="customization">
+            Customization
+          </li>
+          <li class="flex-nav-list-item" data-route="integration">
+            Export, 3rd Party Integration, &amp; API
+          </li>
+        </ul>
+      </div>
+      <label class="select-appearance">
+        <select id="theme-picker">
+          <option value="light" selected>Light</option> 
+          <option value="dark">Dark</option>
+          <option value="windows-xp">Windows XP</option>
+        </select>
+      </label>
+    </div>
+    <div id="zc-current-view"></div>
+  </script>
+​
+  <script type="text/template" id="ChartTemplate">
+    <div id="chart-container" class="flex-container">
+      <% _.each(charts, function(chart) { %>
+        <div class="flex-item" <%= chart.type == 'iframe' ? "style='width:100%;'" : '' %> >
+          <% if (chart.type && chart.type == 'iframe') { %>
+            <% if (chart.header) { %>
+              <<%= chart.header.element %>>
+                <%= chart.header.text %>
+              <<%= "/" + chart.header.element %>>
+            <% } %>
+            <iframe src="<%= chart.src %>" height="<%= chart.height %>" width="<%= chart.width %>" frameBorder="<%= chart.frameBorder %>"></iframe>
+          <% } else { %>
+            <% if (chart.header) { %>
+              <<%= chart.header.element %>>
+                <%= chart.header.text %>
+              <<%= "/" + chart.header.element %>>
+            <% } %>
+            <div id="<%= chart.render.id %>"></div>
+            <% if (chart.options) { %>
+              <div class="flex-container flex-options">
+                  <% if ( _.has(chart.options, 'select-labels') && ( chart.options['select-labels'].length == chart.options.selects.length) ) { %>
+                    <% _.each(chart.options['select-labels'], function(label, idx){ %>
+                      <div class="flex-item">
+                        <label> <%= label %> </label>
+                        <select class="aspect-select" id="<%= chart.render.id + '-aspect' %>">
+                          <% _.each(chart.options.selects[idx], function(optionObj){ %>
+                            <option value="<%= optionObj.value %>"> <%= optionObj.label %> </option>
+                          <% }) %>
+                        </select>
+                      </div>
+                    <% }) %>
+                  <% } %>
+                  <% if (chart.options.thirdDimension) { %>
+                  <div class="flex-item">
+                    <a id="<%= chart.render.id + '-3d' %>" class="btn">
+                      Go <%= (chart.states.is3d) ? '2D' : '3D' %>
+                    </a>
+                  </div>
+                <% } %>
+                <% if (chart.options.orientation) { %>
+                  <div class="flex-item">
+                    <a id="<%= chart.render.id + '-rotate' %>" class="btn">Rotate</a>
+                  </div>
+                <% } %>
+                <% if (chart.options.markers) { %>
+                  <div class="flex-item">
+                    <a id="<%= chart.render.id + '-markers' %>" class="btn">
+                      Cycle Marker Types
+                    </a>
+                  </div>
+                <% } %>
+                <% if (chart.options.stack) { %>
+                  <div class="flex-item">
+                    <a id="<%= chart.render.id + '-stack' %>" class="btn">
+                      Change Stack Type
+                    </a>
+                  </div>
+                <% } %>
+                <% if (chart.options.types) { %>
+                  <div class="flex-item">
+                    <label>Type 1: </label>
+                    <select id="<%= chart.render.id + '-type1' %>">
+                      <% _.each(chart.options.types, function(type) { %>
+                        <option value="<%= type.value %>"><%= type.label %></option>
+                      <% }) %>
+                    </select>
+                  </div>
+                  <div class="flex-item">
+                    <label>Type 2: </label>
+                    <select id="<%= chart.render.id + '-type2' %>">
+                      <% _.each(chart.options['types-2'], function(type) { %>
+                        <option value="<%= type.value %>"><%= type.label %></option>
+                      <% }) %>
+                    </select>
+                  </div>
+                <% } %>
+              </div>
+            <% } %>
+          <% } %>
+        </div>
+      <% }) %>
+    </div>
+  </script>
+​
+  <script type="text/template" id="ControlsTemplate">
+    <div class="flex-container">
+      <p>Chart Options Here</p>
+    </div>
+  </script>
+​ <script src="bower_components/requirejs/require.js" 
+  data-main="/app/config"></script>
+</body>
+</html>

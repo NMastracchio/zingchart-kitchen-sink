@@ -1,0 +1,1 @@
+define(["require","exports","module","./render"],function(e,t,n){var r=e("./render"),i=Backbone.Model.extend({defaults:{render:new r},initialize:function(e,t){e.render&&this.set("render",new r(e.render))},render:function(){}});n.exports=i});

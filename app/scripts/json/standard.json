@@ -1,0 +1,2034 @@
+[
+    {
+        "render": {
+            "id": "lineChart",
+            "data": {
+                "type": "line",
+                "theme": "light",
+                "id": "id0",
+                "title": {
+                    "text": "Line Chart"
+                },
+                "scale-x": {
+                    "offset-start": "8%",
+                    "offset-end": "8%"
+                },
+                "series": [
+                    {
+                        "values": [
+                            5,
+                            10,
+                            15,
+                            5,
+                            10,
+                            5
+                        ]
+                    },
+                    {
+                        "values": [
+                            2,
+                            1,
+                            6,
+                            3,
+                            10,
+                            8
+                        ]
+                    },
+                    {
+                        "values": [
+                            12,
+                            6,
+                            8,
+                            11,
+                            10,
+                            12
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {
+          "select-labels":[
+            "Aspect: "
+          ],
+          "selects":[
+            [
+              {
+                  "label": "Standard",
+                  "value": "segmented"
+              },
+              {
+                  "label": "Spline",
+                  "value": "spline"
+              },
+              {
+                  "label": "Jumped",
+                  "value": "jumped"
+              },
+              {
+                  "label": "Stepped",
+                  "value": "stepped"
+              }
+            ]
+          ],
+          "thirdDimension": true,
+          "orientation": true
+        },
+        "states": {
+            "is3d": false,
+            "isRotated": false,
+            "orientations": [
+                "line",
+                "vline"
+            ]
+        }
+    },
+    {
+        "render": {
+            "id": "barChart",
+            "data": {
+                "type": "bar",
+                "theme": "light",
+                "id": "id0",
+                "title": {
+                    "text": "Bar Chart"
+                },
+                "scale-x": {
+                    "offset-start": "8%",
+                    "offset-end": "8%"
+                },
+                "series": [
+                    {
+                        "values": [
+                            5,
+                            10,
+                            15,
+                            5,
+                            10,
+                            5
+                        ]
+                    },
+                    {
+                        "values": [
+                            2,
+                            1,
+                            6,
+                            3,
+                            10,
+                            8
+                        ]
+                    },
+                    {
+                        "values": [
+                            12,
+                            6,
+                            8,
+                            11,
+                            10,
+                            12
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {
+          "select-labels":[
+            "Aspect: "
+          ],
+          "selects":[
+            [
+              {
+                  "label": "Standard",
+                  "value": "standard"
+              },
+              {
+                  "label": "Cone",
+                  "value": "cone"
+              },
+              {
+                  "label": "Cylinder",
+                  "value": "cylinder"
+              },
+              {
+                  "label": "Pyramid",
+                  "value": "pyramid"
+              }
+            ]
+          ],
+            "thirdDimension": true,
+            "orientation": true
+        },
+        "states": {
+            "is3d": false,
+            "isRotated": false,
+            "orientations": [
+                "bar",
+                "hbar"
+            ]
+        }
+    },
+    {
+        "render": {
+            "id": "areaChart",
+            "data": {
+                "type": "area",
+                "theme": "light",
+                "id": "id0",
+                "title": {
+                    "text": "Area Chart"
+                },
+                "scale-x": {
+                    "offset-start": "8%",
+                    "offset-end": "8%"
+                },
+                "series": [
+                    {
+                        "values": [
+                            5,
+                            10,
+                            15,
+                            5,
+                            10,
+                            5
+                        ]
+                    },
+                    {
+                        "values": [
+                            2,
+                            1,
+                            6,
+                            3,
+                            10,
+                            8
+                        ]
+                    },
+                    {
+                        "values": [
+                            12,
+                            6,
+                            8,
+                            11,
+                            10,
+                            12
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {
+          "select-labels":[
+            "Aspect: "
+          ],
+          "selects":[
+            [
+              {
+                  "label": "Standard",
+                  "value": "segmented"
+              },
+              {
+                  "label": "Spline",
+                  "value": "spline"
+              },
+              {
+                  "label": "Stepped",
+                  "value": "stepped"
+              }
+            ]
+          ],
+            "thirdDimension": true,
+            "orientation": true
+        },
+        "states": {
+            "is3d": false,
+            "isRotated": false,
+            "orientations": [
+                "area",
+                "varea"
+            ]
+        }
+    },
+    {
+        "render": {
+            "id": "pieChart",
+            "data": {
+                "type": "pie",
+                "theme": "light",
+                "title": {
+                    "text": "Pie Chart"
+                },
+                "crosshair-x": {
+                    "visible": 0
+                },
+                "plot": {},
+                "plotarea": {
+                    "margin-top": "15%",
+                    "margin-bottom": "9%",
+                    "margin-left": "15%",
+                    "margin-right": "12%"
+                },
+                "series": [
+                    {
+                        "values": [
+                            5
+                        ],
+                        "text": "Alaska"
+                    },
+                    {
+                        "values": [
+                            2
+                        ],
+                        "text": "Maine"
+                    },
+                    {
+                        "values": [
+                            7
+                        ],
+                        "text": "Texas"
+                    },
+                    {
+                        "values": [
+                            10
+                        ],
+                        "text": "Wyoming"
+                    }
+                ]
+            }
+        },
+        "options": {
+          "select-labels":[
+            "Aspect: "
+          ],
+          "selects":[
+            [
+              {
+                  "label": "Pie",
+                  "value": "pie"
+              },
+              {
+                  "label": "Ring",
+                  "value": "ring"
+              },
+              {
+                  "label": "Nested Pie",
+                  "value": "nestedpie"
+              }
+            ]
+          ],
+          "thirdDimension": true
+        },
+        "states": {
+            "is3d": false,
+            "currentType": "pie2d",
+            "pie2d": {
+                "id": "pieChart",
+                "data": {
+                    "type": "pie",
+                    "theme": "light",
+                    "title": {
+                        "text": "Pie Chart"
+                    },
+                    "crosshair-x": {
+                        "visible": 0
+                    },
+                    "plot": {},
+                    "plotarea": {
+                        "margin-top": "15%",
+                        "margin-bottom": "9%",
+                        "margin-left": "15%",
+                        "margin-right": "12%"
+                    },
+                    "series": [
+                        {
+                            "values": [
+                                5
+                            ],
+                            "text": "Alaska"
+                        },
+                        {
+                            "values": [
+                                2
+                            ],
+                            "text": "Maine"
+                        },
+                        {
+                            "values": [
+                                7
+                            ],
+                            "text": "Texas"
+                        },
+                        {
+                            "values": [
+                                10
+                            ],
+                            "text": "Wyoming"
+                        }
+                    ]
+                }
+            },
+            "pie3d": {
+                "id": "pieChart",
+                "data": {
+                    "type": "pie3d",
+                    "theme": "light",
+                    "title": {
+                        "text": "Pie Chart"
+                    },
+                    "crosshair-x": {
+                        "visible": 0
+                    },
+                    "plot": {},
+                    "plotarea": {
+                        "margin-top": "15%",
+                        "margin-bottom": "9%",
+                        "margin-left": "15%",
+                        "margin-right": "12%"
+                    },
+                    "series": [
+                        {
+                            "values": [
+                                5
+                            ],
+                            "text": "Alaska"
+                        },
+                        {
+                            "values": [
+                                2
+                            ],
+                            "text": "Maine"
+                        },
+                        {
+                            "values": [
+                                7
+                            ],
+                            "text": "Texas"
+                        },
+                        {
+                            "values": [
+                                10
+                            ],
+                            "text": "Wyoming"
+                        }
+                    ]
+                }
+            },
+            "ring2d": {
+                "id": "pieChart",
+                "data": {
+                    "type": "ring",
+                    "theme": "light",
+                    "title": {
+                        "text": "Pie Chart"
+                    },
+                    "crosshair-x": {
+                        "visible": 0
+                    },
+                    "plot": {},
+                    "plotarea": {
+                        "margin-top": "15%",
+                        "margin-bottom": "9%",
+                        "margin-left": "15%",
+                        "margin-right": "12%"
+                    },
+                    "series": [
+                        {
+                            "values": [
+                                5
+                            ],
+                            "text": "Alaska"
+                        },
+                        {
+                            "values": [
+                                2
+                            ],
+                            "text": "Maine"
+                        },
+                        {
+                            "values": [
+                                7
+                            ],
+                            "text": "Texas"
+                        },
+                        {
+                            "values": [
+                                10
+                            ],
+                            "text": "Wyoming"
+                        }
+                    ]
+                }
+            },
+            "ring3d": {
+                "id": "pieChart",
+                "data": {
+                    "type": "pie3d",
+                    "theme": "light",
+                    "title": {
+                        "text": "Pie Chart"
+                    },
+                    "crosshair-x": {
+                        "visible": 0
+                    },
+                    "plot": {
+                        "slice": 20
+                    },
+                    "plotarea": {
+                        "margin-top": "15%",
+                        "margin-bottom": "9%",
+                        "margin-left": "15%",
+                        "margin-right": "12%"
+                    },
+                    "series": [
+                        {
+                            "values": [
+                                5
+                            ],
+                            "text": "Alaska"
+                        },
+                        {
+                            "values": [
+                                2
+                            ],
+                            "text": "Maine"
+                        },
+                        {
+                            "values": [
+                                7
+                            ],
+                            "text": "Texas"
+                        },
+                        {
+                            "values": [
+                                10
+                            ],
+                            "text": "Wyoming"
+                        }
+                    ]
+                }
+            },
+            "nestedpie2d": {
+                "id": "pieChart",
+                "data": {
+                    "type": "nestedpie",
+                    "theme": "light",
+                    "title": {
+                        "text": "Pie Chart"
+                    },
+                    "crosshair-x": {
+                        "visible": 0
+                    },
+                    "plot": {},
+                    "plotarea": {
+                        "margin-top": "15%",
+                        "margin-bottom": "9%",
+                        "margin-left": "15%",
+                        "margin-right": "12%"
+                    },
+                    "series": [
+                        {
+                            "values": [
+                                5,
+                                6,
+                                3,
+                                8
+                            ],
+                            "text": "Alaska",
+                            "value-box": {
+                                "visible": false
+                            }
+                        },
+                        {
+                            "values": [
+                                8,
+                                3,
+                                5,
+                                1
+                            ],
+                            "text": "Maine",
+                            "value-box": {
+                                "visible": false
+                            }
+                        },
+                        {
+                            "values": [
+                                7,
+                                10,
+                                3,
+                                6
+                            ],
+                            "text": "Texas",
+                            "value-box": {
+                                "visible": false
+                            }
+                        },
+                        {
+                            "values": [
+                                3,
+                                9,
+                                9,
+                                5
+                            ],
+                            "text": "Wyoming",
+                            "value-box": {
+                                "visible": false
+                            }
+                        }
+                    ]
+                }
+            },
+            "nestedpie3d": {
+                "id": "pieChart",
+                "data": {
+                    "type": "nestedpie",
+                    "theme": "light",
+                    "title": {
+                        "text": "Pie Chart"
+                    },
+                    "crosshair-x": {
+                        "visible": 0
+                    },
+                    "plot": {},
+                    "plotarea": {
+                        "margin-top": "15%",
+                        "margin-bottom": "9%",
+                        "margin-left": "15%",
+                        "margin-right": "12%"
+                    },
+                    "series": [
+                        {
+                            "values": [
+                                5,
+                                6,
+                                3,
+                                8
+                            ],
+                            "text": "Alaska",
+                            "value-box": {
+                                "visible": false
+                            }
+                        },
+                        {
+                            "values": [
+                                8,
+                                3,
+                                5,
+                                1
+                            ],
+                            "text": "Maine",
+                            "value-box": {
+                                "visible": false
+                            }
+                        },
+                        {
+                            "values": [
+                                7,
+                                10,
+                                3,
+                                6
+                            ],
+                            "text": "Texas",
+                            "value-box": {
+                                "visible": false
+                            }
+                        },
+                        {
+                            "values": [
+                                3,
+                                9,
+                                9,
+                                5
+                            ],
+                            "text": "Wyoming",
+                            "value-box": {
+                                "visible": false
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "render": {
+            "id": "scatterChart",
+            "data": {
+                "type": "scatter",
+                "theme": "light",
+                "title": {
+                    "text": "Scatter Chart"
+                },
+                "plot": {
+                    "marker": {
+                        "type": "circle",
+                        "size": 6
+                    }
+                },
+                "series": [
+                    {
+                        "values": [
+                            5,
+                            10,
+                            15,
+                            5,
+                            14,
+                            5
+                        ]
+                    },
+                    {
+                        "values": [
+                            2,
+                            1,
+                            3,
+                            4,
+                            9,
+                            10
+                        ]
+                    },
+                    {
+                        "values": [
+                            6,
+                            9,
+                            3,
+                            2,
+                            6,
+                            3
+                        ]
+                    },
+                    {
+                        "values": [
+                            3,
+                            4,
+                            2,
+                            7,
+                            3,
+                            7
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {
+            "markers": true
+        },
+        "states": {
+            "currentMarker": 0,
+            "markers": [
+                {
+                    "type": "circle",
+                    "size": 6
+                },
+                {
+                    "type": "triangle",
+                    "size": 6
+                },
+                {
+                    "type": "square",
+                    "size": 6
+                },
+                {
+                    "type": "diamond",
+                    "size": 6
+                },
+                {
+                    "type": "trapezoid",
+                    "size1": 6,
+                    "size2": 6
+                },
+                {
+                    "type": "rectangle",
+                    "height": 6,
+                    "width": 8
+                },
+                {
+                    "type": "parallelogram",
+                    "size1": 6,
+                    "size2": 6
+                },
+                {
+                    "type": "plus",
+                    "size": 6
+                },
+                {
+                    "type": "cross",
+                    "size": 6
+                },
+                {
+                    "type": "star5",
+                    "size": 6
+                },
+                {
+                    "type": "rpoly5",
+                    "size": 6
+                },
+                {
+                    "type": "gear5",
+                    "size": 6
+                },
+                {
+                    "type": "ellipse",
+                    "size": 6
+                },
+                {
+                    "type": "pie",
+                    "pie-angle-start": 45,
+                    "pie-angle-end": 90
+                }
+            ]
+        }
+    },
+    {
+        "render": {
+            "id": "radarChart",
+            "data": {
+                "type": "radar",
+                "theme": "light",
+                "title": {
+                    "text": "Radar Chart"
+                },
+                "plot": {},
+                "plotarea": {
+                    "margin-top": 30,
+                    "margin-bottom": 15
+                },
+                "series": [
+                    {
+                        "values": [
+                            5,
+                            10,
+                            15,
+                            5,
+                            14,
+                            5
+                        ]
+                    },
+                    {
+                        "values": [
+                            2,
+                            1,
+                            3,
+                            4,
+                            9,
+                            10
+                        ]
+                    },
+                    {
+                        "values": [
+                            6,
+                            9,
+                            3,
+                            2,
+                            6,
+                            3
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {
+          "select-labels":[
+            "Aspect: "
+          ],
+          "selects":[
+            [
+              {
+                  "label": "Pie",
+                  "value": "pie"
+              },
+              {
+                  "label": "Ring",
+                  "value": "ring"
+              },
+              {
+                  "label": "Nested Pie",
+                  "value": "nestedpie"
+              }
+            ]
+          ]
+        },
+        "states": {
+            "ogSeries": [
+                {
+                    "values": [
+                        5,
+                        10,
+                        15,
+                        5,
+                        14,
+                        5
+                    ]
+                },
+                {
+                    "values": [
+                        2,
+                        1,
+                        3,
+                        4,
+                        9,
+                        10
+                    ]
+                },
+                {
+                    "values": [
+                        6,
+                        9,
+                        3,
+                        2,
+                        6,
+                        3
+                    ]
+                }
+            ],
+            "altSeries": [
+                {
+                    "values": [
+                        5,
+                        10,
+                        15,
+                        5,
+                        14,
+                        5
+                    ],
+                    "aspect": "line"
+                },
+                {
+                    "values": [
+                        2,
+                        1,
+                        3,
+                        4,
+                        9,
+                        10
+                    ],
+                    "aspect": "rose"
+                }
+            ]
+        }
+    },
+    {
+        "render": {
+            "id": "stockChart",
+            "data": {
+                "type": "stock",
+                "theme": "light",
+                "title": {
+                    "text": "Stock Chart"
+                },
+                "scale-y":{
+                  "min-value":1.2
+                  },
+                "tooltip": {
+                    "text": "Open %node-value-stock-open<br>High %node-value-stock-high<br>Low %node-value-stock-low<br>Close %node-value-stock-close"
+                },
+                "plot": {
+                  "trend-up":{
+                    "background-color":"#7CA82B",
+                    "border-color":"#7CA82B",
+                    "line-color":"#7CA82B"
+                  },
+                  "trend-down":{
+                    "background-color":"#D31E1E",
+                    "border-color":"#D31E1E",
+                    "line-color":"#D31E1E"
+                  },
+                  "trend-equal":{
+                    "background-color":"#6B7075",
+                    "border-color":"#6B7075",
+                    "line-color":"#6B7075"
+                  }
+                  },
+                "series": [
+                    {
+                "values":[[1.67,1.71,1.67,1.68],
+                [1.73,1.73,1.66,1.67],
+                [1.72,1.74,1.72,1.73],
+                [1.71,1.75,1.71,1.71],
+                [null,null,null,1.77],
+                [null,null,null,1.77],
+                [null,null,null,1.77],
+                [1.77,1.77,1.77,1.77],
+                [1.69,1.8,1.6,1.8],
+                [1.67,1.72,1.67,1.7],
+                [1.57,1.7,1.57,1.63],
+                [1.53,1.63,1.53,1.56],
+                [1.55,1.55,1.5,1.52],
+                [null,null,null,1.46],
+                [1.53,1.55,1.45,1.46],
+                [1.54,1.58,1.54,1.55],
+                [1.6,1.61,1.56,1.57],
+                [1.63,1.63,1.6,1.6],
+                [null,null,null,1.65],
+                [null,null,null,1.65],
+                [null,null,null,1.65],
+                [null,null,null,1.65],
+                [1.65,1.65,1.65,1.65],
+                [1.65,1.65,1.65,1.65],
+                [1.63,1.65,1.63,1.65],
+                [1.62,1.65,1.62,1.63],
+                [1.65,1.65,1.62,1.62],
+                [null,null,null,1.63],
+                [1.65,1.65,1.61,1.63],
+                [1.7,1.7,1.66,1.66],
+                [1.63,1.73,1.63,1.73],
+                [1.63,1.64,1.63,1.63],
+                [1.61,1.61,1.6,1.6],
+                [1.61,1.63,1.61,1.63],
+                [1.62,1.62,1.61,1.61],
+                [1.64,1.65,1.63,1.64],
+                [1.58,1.65,1.55,1.61],
+                [1.64,1.64,1.64,1.64],
+                [null,null,null,1.64],
+                [1.65,1.65,1.62,1.64],
+                [1.6,1.64,1.6,1.64],
+                [1.66,1.66,1.65,1.65],
+                [null,null,null,1.67],
+                [1.6,1.67,1.6,1.67],
+                [1.6,1.6,1.58,1.58],
+                [1.58,1.6,1.55,1.6],
+                [null,null,null,1.57],
+                [1.57,1.57,1.57,1.57],
+                [1.55,1.6,1.55,1.55],
+                [null,null,null,1.58],
+                [1.6,1.6,1.58,1.58],
+                [1.65,1.65,1.64,1.64],
+                [null,null,null,1.7],
+                [null,null,null,1.7],
+                [1.7,1.7,1.7,1.7],
+                [1.7,1.7,1.7,1.7],
+                [1.7,1.7,1.68,1.7],
+                [1.66,1.66,1.66,1.66],
+                [1.64,1.64,1.61,1.63],
+                [1.68,1.68,1.65,1.65],
+                [1.67,1.72,1.66,1.68],
+                [1.65,1.67,1.65,1.66],
+                [1.65,1.65,1.64,1.65],
+                [1.63,1.67,1.63,1.67],
+                [1.62,1.68,1.62,1.65],
+                [1.61,1.62,1.6,1.62],
+                [1.68,1.68,1.6,1.6],
+                [1.68,1.68,1.68,1.68],
+                [1.72,1.74,1.7,1.7],
+                [1.74,1.74,1.73,1.73],
+                [1.72,1.73,1.72,1.73],
+                [1.74,1.75,1.69,1.75],
+                [1.75,1.75,1.74,1.75],
+                [1.76,1.76,1.75,1.75],
+                [1.78,1.78,1.75,1.78],
+                [1.77,1.8,1.76,1.76],
+                [1.8,1.8,1.77,1.77],
+                [1.78,1.82,1.78,1.8],
+                [1.8,1.8,1.74,1.75],
+                [1.77,1.8,1.75,1.8],
+                [1.76,1.78,1.75,1.76],
+                [1.78,1.78,1.77,1.77],
+                [1.78,1.78,1.75,1.78],
+                [1.8,1.8,1.77,1.77],
+                [1.78,1.78,1.75,1.76],
+                [1.8,1.8,1.78,1.78],
+                [1.77,1.8,1.77,1.8],
+                [null,null,null,1.82],
+                [null,null,null,1.82],
+                [1.79,1.82,1.79,1.82],
+                [1.75,1.79,1.75,1.79],
+                [1.72,1.72,1.71,1.71],
+                [1.77,1.79,1.74,1.79],
+                [1.8,1.8,1.79,1.79],
+                [1.76,1.79,1.75,1.79],
+                [1.78,1.78,1.75,1.78],
+                [1.78,1.78,1.78,1.78],
+                [1.79,1.79,1.75,1.78],
+                [1.76,1.79,1.76,1.79],
+                [1.8,1.82,1.8,1.82],
+                [1.75,1.75,1.75,1.75],
+                [null,null,null,1.75],
+                [1.8,1.8,1.75,1.75],
+                [1.77,1.77,1.77,1.77],
+                [1.81,1.81,1.77,1.77],
+                [null,null,null,1.8],
+                [1.87,1.87,1.8,1.8],
+                [1.85,1.87,1.84,1.87],
+                [1.86,1.86,1.86,1.86],
+                [1.88,1.88,1.87,1.87],
+                [1.9,1.9,1.9,1.9],
+                [1.93,1.93,1.9,1.9],
+                [1.9,1.9,1.89,1.9],
+                [1.85,1.9,1.85,1.9],
+                [1.83,1.84,1.83,1.84],
+                [1.8,1.83,1.8,1.83],
+                [null,null,null,1.8],
+                [null,null,null,1.8],
+                [1.75,1.8,1.75,1.8],
+                [null,null,null,1.77],
+                [1.8,1.8,1.77,1.77],
+                [1.81,1.81,1.8,1.8],
+                [1.78,1.81,1.78,1.81],
+                [1.81,1.82,1.81,1.81],
+                [1.76,1.81,1.76,1.81],
+                [1.81,1.81,1.78,1.78],
+                [1.88,1.88,1.8,1.81],
+                [1.85,1.86,1.85,1.86],
+                [1.83,1.84,1.83,1.83],
+                [1.88,1.88,1.83,1.87],
+                [1.9,1.9,1.9,1.9],
+                [null,null,null,1.94],
+                [1.8,1.94,1.8,1.94],
+                [1.78,1.94,1.75,1.94],
+                [1.7,1.78,1.7,1.78],
+                [1.75,1.78,1.75,1.78],
+                [1.75,1.78,1.72,1.78],
+                [1.75,1.78,1.73,1.78],
+                [1.8,1.8,1.8,1.8],
+                [1.8,1.85,1.8,1.8],
+                [1.77,1.8,1.77,1.8],
+                [1.77,1.77,1.77,1.77],
+                [1.75,1.75,1.75,1.75],
+                [1.84,1.84,1.78,1.78],
+                [1.8,1.8,1.8,1.8],
+                [1.85,1.85,1.8,1.8],
+                [1.79,1.85,1.79,1.85],
+                [1.79,1.8,1.79,1.79],
+                [1.7,1.74,1.7,1.74],
+                [1.72,1.72,1.7,1.7],
+                [1.68,1.7,1.68,1.7],
+                [1.64,1.68,1.64,1.68],
+                [1.6,1.64,1.6,1.64],
+                [1.64,1.64,1.64,1.64],
+                [1.59,1.62,1.59,1.62],
+                [1.6,1.6,1.59,1.59],
+                [1.6,1.6,1.6,1.6],
+                [1.63,1.63,1.6,1.6],
+                [1.64,1.64,1.64,1.64],
+                [1.62,1.64,1.62,1.64],
+                [1.56,1.62,1.56,1.62],
+                [1.58,1.58,1.55,1.55],
+                [1.52,1.53,1.52,1.52],
+                [1.51,1.51,1.51,1.51],
+                [1.5,1.52,1.5,1.5],
+                [1.52,1.52,1.46,1.46],
+                [1.5,1.5,1.49,1.5],
+                [1.5,1.5,1.49,1.5],
+                [1.49,1.49,1.49,1.49],
+                [1.49,1.5,1.49,1.5],
+                [1.45,1.45,1.45,1.45],
+                [1.46,1.46,1.45,1.45],
+                [1.49,1.5,1.48,1.48],
+                [null,null,null,1.45],
+                [1.45,1.45,1.45,1.45],
+                [1.44,1.45,1.43,1.45],
+                [1.42,1.42,1.42,1.42],
+                [null,null,null,1.45],
+                [1.44,1.45,1.44,1.45],
+                [null,null,null,1.45],
+                [1.45,1.45,1.45,1.45],
+                [1.45,1.45,1.42,1.45],
+                [1.45,1.45,1.45,1.45],
+                [1.45,1.45,1.43,1.43],
+                [1.45,1.45,1.45,1.45],
+                [1.45,1.46,1.44,1.46],
+                [1.45,1.46,1.45,1.46],
+                [1.44,1.45,1.44,1.45],
+                [1.45,1.45,1.44,1.44],
+                [1.46,1.46,1.45,1.46],
+                [1.49,1.49,1.45,1.45],
+                [1.52,1.52,1.47,1.5],
+                [1.54,1.54,1.54,1.54],
+                [1.55,1.55,1.54,1.55],
+                [1.52,1.55,1.52,1.54],
+                [1.5,1.53,1.5,1.53],
+                [null,null,null,1.5],
+                [null,null,null,1.5],
+                [1.45,1.5,1.45,1.5],
+                [1.46,1.46,1.45,1.45],
+                [1.44,1.45,1.44,1.45],
+                [1.48,1.48,1.48,1.48],
+                [1.48,1.48,1.48,1.48],
+                [1.5,1.5,1.5,1.5],
+                [null,null,null,1.46],
+                [1.43,1.46,1.43,1.46],
+                [1.4,1.4,1.4,1.4],
+                [1.42,1.42,1.42,1.42],
+                [1.4,1.4,1.4,1.4],
+                [1.39,1.4,1.38,1.4],
+                [1.38,1.39,1.37,1.38],
+                [1.37,1.39,1.37,1.38],
+                [1.35,1.36,1.35,1.36],
+                [1.34,1.35,1.34,1.35],
+                [1.35,1.35,1.35,1.35],
+                [1.33,1.33,1.32,1.32],
+                [1.33,1.34,1.33,1.33],
+                [1.35,1.35,1.35,1.35],
+                [1.35,1.35,1.35,1.35],
+                [1.35,1.35,1.33,1.35],
+                [1.34,1.35,1.34,1.35],
+                [1.34,1.34,1.34,1.34],
+                [1.33,1.34,1.33,1.34],
+                [1.34,1.35,1.3,1.35]]
+                  }
+                ]
+            }
+        }
+    },
+    {
+        "render": {
+            "id": "bubbleChart",
+            "data": {
+                "type": "bubble",
+                "theme": "light",
+                "title": {
+                    "text": "Bubble Chart"
+                },
+                "scale-y": {
+                    "offset-start": 0,
+                    "offset-end": 10
+                },
+                "scale-x": {
+                    "offset-start": "8%",
+                    "offset-end": "8%"
+                },
+                "plot": {
+                    "scaling": "sqrt"
+                },
+                "series": [
+                    {
+                        "values": [
+                            [
+                                5,
+                                6,
+                                2
+                            ],
+                            [
+                                7,
+                                9,
+                                3
+                            ],
+                            [
+                                7.5,
+                                8.5,
+                                2.5
+                            ],
+                            [
+                                2.2,
+                                3,
+                                2.8
+                            ],
+                            [
+                                1.2,
+                                1,
+                                4.8
+                            ],
+                            [
+                                3.2,
+                                0.2,
+                                2.8
+                            ]
+                        ]
+                    },
+                    {
+                        "values": [
+                            [
+                                1,
+                                7.2,
+                                2
+                            ],
+                            [
+                                3,
+                                4.5,
+                                3
+                            ],
+                            [
+                                5.5,
+                                2.5,
+                                5.5
+                            ],
+                            [
+                                3.2,
+                                2.4,
+                                2.8
+                            ]
+                        ]
+                    },
+                    {
+                        "values": [
+                            [
+                                3.4,
+                                5,
+                                8.2
+                            ],
+                            [
+                                2,
+                                1,
+                                9
+                            ],
+                            [
+                                8.3,
+                                8,
+                                7.3
+                            ],
+                            [
+                                4.4,
+                                6.5,
+                                9
+                            ],
+                            [
+                                7.1,
+                                3,
+                                7
+                            ],
+                            [
+                                2,
+                                7,
+                                5
+                            ],
+                            [
+                                1,
+                                4,
+                                6
+                            ],
+                            [
+                                6.2,
+                                2,
+                                6.5
+                            ],
+                            [
+                                4,
+                                8,
+                                6.5
+                            ],
+                            [
+                                1,
+                                2.5,
+                                4.5
+                            ],
+                            [
+                                2,
+                                8,
+                                5
+                            ]
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "render": {
+            "id": "pianoChart",
+            "data": {
+                "type": "piano",
+                "theme": "light",
+                "title": {
+                    "text": "Piano Chart"
+                },
+                "plot": {},
+                "series": [
+                    {
+                        "values": [
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "text": "X"
+                    },
+                    {
+                        "values": [
+                            2,
+                            4,
+                            6,
+                            8
+                        ],
+                        "text": "Y"
+                    },
+                    {
+                        "values": [
+                            4,
+                            8,
+                            12,
+                            16
+                        ],
+                        "text": "Z"
+                    },
+                    {
+                        "values": [
+                            8,
+                            16,
+                            24,
+                            32
+                        ],
+                        "text": "W"
+                    }
+                ]
+            }
+        },
+        "options": {
+          "select-labels":[
+            "Aspect: "
+          ],
+          "selects":[
+            [
+              {
+                  "label": "Brightness",
+                  "value": "brightness"
+              },
+              {
+                  "label": "Size",
+                  "value": "size"
+              },
+              {
+                  "label": "Horizontal",
+                  "value": "horizontal"
+              },
+              {
+                  "label": "Vertical",
+                  "value": "vertical"
+              }
+            ]
+          ]
+        }
+    },
+    {
+        "render": {
+            "id": "bulletChart",
+            "data": {
+                "type": "bullet",
+                "theme": "light",
+                "title": {
+                    "text": "Bullet Chart"
+                },
+                "scale-y": {
+                    "values": "0:100:20",
+                    "max-items": 6
+                },
+                "series": [
+                    {
+                        "values": [
+                            98,
+                            87,
+                            12,
+                            92,
+                            93
+                        ],
+                        "goals": [
+                            90,
+                            75,
+                            25,
+                            80,
+                            90
+                        ]
+                    },
+                    {
+                        "values": [
+                            76,
+                            62,
+                            25,
+                            52,
+                            48
+                        ],
+                        "goals": [
+                            70,
+                            80,
+                            24,
+                            61,
+                            25
+                        ]
+                    },
+                    {
+                        "values": [
+                            81,
+                            54,
+                            37,
+                            40,
+                            57
+                        ],
+                        "goals": [
+                            62,
+                            70,
+                            29,
+                            54,
+                            41
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {
+          "select-labels":[
+            "Aspect: "
+          ],
+          "selects":[
+            [
+              {
+                  "label": "Standard",
+                  "value": "standard"
+              },
+              {
+                  "label": "Cone",
+                  "value": "cone"
+              }
+            ]
+          ],
+          "orientation": true
+        },
+        "states": {
+            "orientations": [
+                "bullet",
+                "hbullet"
+            ]
+        }
+    },
+    {
+        "render": {
+            "id": "gaugeChart",
+            "data": {
+                "type": "gauge",
+                "theme": "light",
+                "title": {
+                    "text": "Gauge Chart"
+                },
+                "plotarea": {
+                    "margin-top": 30,
+                    "margin-bottom": 0,
+                    "margin-left": 0,
+                    "margin-right": 0
+                },
+                "scale": {
+                    "offset-y": 30
+                },
+                "plot": {
+                    "csize": 6
+                },
+                "series": [
+                    {
+                        "values": [
+                            9
+                        ],
+                        "animation": {
+                            "method": 5,
+                            "effect": 2,
+                            "speed": 3500
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "render": {
+            "id": "funnelChart",
+            "data": {
+                "type": "funnel",
+                "theme": "light",
+                "title": {
+                    "text": "Funnel Chart"
+                },
+                "scale-x": {
+                    "item": {
+                        "visible": 0
+                    }
+                },
+                "series": [
+                    {
+                        "values": [
+                            80
+                        ]
+                    },
+                    {
+                        "values": [
+                            62
+                        ]
+                    },
+                    {
+                        "values": [
+                            31
+                        ]
+                    },
+                    {
+                        "values": [
+                            15
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {
+            "orientation": true
+        },
+        "states": {
+            "orientations": [
+                "funnel",
+                "hfunnel"
+            ]
+        }
+    },
+    {
+        "render": {
+            "id": "vennChart",
+            "data": {
+                "type": "venn",
+                "theme": "light",
+                "title": {
+                    "text": "Venn Diagram"
+                },
+                "plotarea": {
+                    "margin-top": 35,
+                    "margin-bottom": 0,
+                    "margin-left": 0,
+                    "margin-right": 30
+                },
+                "series": [
+                    {
+                        "values": [
+                            100
+                        ],
+                        "join": [
+                            5
+                        ]
+                    },
+                    {
+                        "values": [
+                            70
+                        ],
+                        "join": [
+                            5
+                        ]
+                    },
+                    {
+                        "values": [
+                            90
+                        ],
+                        "join": [
+                            5
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "render": {
+            "id": "paretoChart",
+            "data": {
+                "type": "pareto",
+                "theme": "light",
+                "title": {
+                    "text": "Pareto Chart"
+                },
+                "plotarea": {
+                    "margin-top": 50,
+                    "margin-right": 50,
+                    "margin-bottom": 50,
+                    "margin-left": 50
+                },
+                "series": [
+                    {
+                        "type": "bar",
+                        "values": [
+                            46420,
+                            43450,
+                            23500,
+                            12510
+                        ],
+                        "hover-state": {
+                            "visible": false
+                        }
+                    },
+                    {
+                        "type": "line",
+                        "scales": "scale-x,scale-y-2",
+                        "tooltip": {
+                            "visible": 0
+                        }
+                    }
+                ],
+                "scale-x": {
+                    "values": [
+                        "Platform",
+                        "GUI",
+                        "Runtime",
+                        "Prod"
+                    ]
+                },
+                "scale-y-2": {
+                    "range": "0:100:20"
+                }
+            }
+        }
+    },
+    {
+        "render": {
+            "id": "popChart",
+            "data": {
+                "type": "pop-pyramid",
+                "background-color": "white",
+                "theme": "light",
+                "options": {
+                    "aspect": "hbar",
+                    "label-placement": "side"
+                },
+                "legend": {
+                    "visible": false
+                },
+                "tooltip": {
+                    "background-color": "white",
+                    "border-width": 1,
+                    "border-color": "#05669D",
+                    "border-radius": 3,
+                    "shadow": false,
+                    "color": "#05669D",
+                    "text": "%v%"
+                },
+                "plot": {
+                    "stacked": true
+                },
+                "plotarea": {
+                    "margin-top": 10
+                },
+                "scale-x": {
+                  "line-color":"none",
+                    "guide": {
+                        "line-color": "none",
+                        "line-width": 2,
+                        "line-style": "solid",
+                        "alpha": 0.5
+                    },
+                    "tick": {
+                        "visible": false
+                    },
+                    "item": {
+                        "text-align": "middle",
+                        "color": "black",
+                        "offset-x": 38,
+                        "offset-y": 0,
+                        "font-size": 9
+                    },
+                    "items-overlap": true,
+                    "values": [
+                        "",
+                        "0-4",
+                        "5-9",
+                        "10-14",
+                        "15-19",
+                        "20-24",
+                        "25-29",
+                        "30-34",
+                        "35-39",
+                        "40-44",
+                        "45-49",
+                        "50-54",
+                        "55-59",
+                        "60-64",
+                        "65-69",
+                        "70-74",
+                        "75-79",
+                        "80-84",
+                        "85-89",
+                        ""
+                    ]
+                },
+                "scale-y": {
+                    "line-width": 1,
+                    "line-color": "none",
+                    "format": "%v%",
+                    "item": {
+                        "color": "white",
+                        "font-size": 9,
+                        "offset-y": 0,
+                        "rules": [
+                            {
+                                "rule": "%i == 4",
+                                "visible": false
+                            },
+                            {
+                                "rule": "%i == 0",
+                                "visible": false
+                            }
+                        ]
+                    },
+                    "tick": {
+                        "offset-y": -10,
+                        "line-color": "white",
+                        "alpha": 0.5
+                    },
+                    "guide": {
+                        "visible": false
+                    },
+                    "short": true,
+                    "values": "0:10:2.5"
+                },
+                "series": [
+                    {
+                        "data-side": 1,
+                        "background-color": "#7CA82B",
+                        "line-width": 1,
+                        "marker": {
+                            "visible": false
+                        },
+                        "values": [
+                            null,
+                            7.8,
+                            7.1,
+                            6.2,
+                            5.3,
+                            4.4,
+                            3.6,
+                            3.2,
+                            2.8,
+                            2.4,
+                            2,
+                            1.6,
+                            1.2,
+                            0.9,
+                            0.7,
+                            0.4,
+                            0.3,
+                            0.1,
+                            0.1,
+                            null
+                        ]
+                    },
+                    {
+                        "data-side": 2,
+                        "background-color": "#7CA82B",
+                        "alpha-area": 0.8,
+                        "line-color": "white",
+                        "line-width": 1,
+                        "marker": {
+                            "visible": false
+                        },
+                        "values": [
+                            null,
+                            7.8,
+                            7.1,
+                            6.2,
+                            5.3,
+                            4.4,
+                            3.6,
+                            3.2,
+                            2.8,
+                            2.4,
+                            2,
+                            1.6,
+                            1.2,
+                            0.9,
+                            0.7,
+                            0.4,
+                            0.3,
+                            0.1,
+                            0.1,
+                            null
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    
+    {
+        "render": {
+            "id": "mixedChart",
+            "data": {
+                "type": "mixed",
+                "theme": "light",
+                "title": {
+                    "text": "Mixed Charts"
+                },
+                "plotarea": {
+                    "margin-top": "15%",
+                    "margin-bottom": "15%",
+                    "margin-left": "6%",
+                    "margin-right": "6%"
+                },
+                "series": [
+                    {
+                        "values": [
+                            8,
+                            31,
+                            12,
+                            41,
+                            24,
+                            20,
+                            16,
+                            40,
+                            9
+                        ],
+                        "type": "bar",
+                        "id":"type1",
+                        "hover-state": {
+                            "visible": 0
+                        }
+                    },
+                    {
+                        "values": [
+                            11,
+                            26,
+                            7,
+                            44,
+                            11,
+                            28,
+                            42,
+                            26,
+                            13
+                        ],
+                        "type": "line",
+                        "id":"type2"
+                    }
+                ]
+            }
+        },
+        "options": {
+            "types": [
+              {
+                  "label": "Bar",
+                  "value": "bar"
+              },
+              {
+                  "label": "Line",
+                  "value": "line"
+              },
+              {
+                  "label": "Area",
+                  "value": "area"
+              },
+              {
+                  "label": "Scatter",
+                  "value": "scatter"
+              }
+            ],
+            "types-2": [
+              {
+                  "label": "Line",
+                  "value": "line"
+              },
+              {
+                  "label": "Scatter",
+                  "value": "scatter"
+              },
+              {
+                  "label": "Area",
+                  "value": "area"
+              },
+              {
+                  "label": "Bar",
+                  "value": "bar"
+              }
+            ]
+        },
+        "states": {
+
+        }
+    },
+    {
+        "render": {
+            "id": "barStackedChart",
+            "data": {
+                "type": "bar",
+                "theme": "light",
+                "stacked": true,
+                "stack-type": "normal",
+                "title": {
+                    "text": "Bar Stacked"
+                },
+                "plotarea": {
+                    "margin-left": "10%",
+                    "margin-right": "8%",
+                    "margin-top": "18%",
+                    "margin-bottom": "18%"
+                },
+                "series": [
+                    {
+                        "values": [
+                            11,
+                            16,
+                            7,
+                            14,
+                            11
+                        ]
+                    },
+                    {
+                        "values": [
+                            28,
+                            35,
+                            22,
+                            35,
+                            30
+                        ]
+                    },
+                    {
+                        "values": [
+                            14,
+                            21,
+                            29,
+                            19,
+                            31
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {
+          "stack": true
+          },
+        "states": {
+          "stacktypes": [
+            "normal",
+            "100%"
+          ]
+        }
+    },
+    {
+        "render": {
+            "id": "areaStackedChart",
+            "data": {
+                "type": "area",
+                "theme": "light",
+                "stacked": true,
+                "stack-type": "normal",
+                "title": {
+                    "text": "Area Stacked"
+                },
+                "plotarea": {
+                    "margin-left": "10%",
+                    "margin-right": "8%",
+                    "margin-top": "18%",
+                    "margin-bottom": "18%"
+                },
+                "series": [
+                    {
+                        "values": [
+                            11,
+                            16,
+                            7,
+                            14,
+                            11
+                        ]
+                    },
+                    {
+                        "values": [
+                            28,
+                            35,
+                            22,
+                            35,
+                            30
+                        ]
+                    },
+                    {
+                        "values": [
+                            14,
+                            21,
+                            29,
+                            19,
+                            31
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {
+          "stack": true
+          },
+        "states": {
+          "stacktypes": [
+            "normal",
+            "100%"
+          ]
+        }
+    }
+]

@@ -1,0 +1,1396 @@
+[
+    {
+        "render": {
+            "id": "lineMarkers",
+            "data": {
+                "type": "bar",
+                "theme": "light",
+                "title": {
+                    "text": "Line Markers"
+                },
+                "scale-y": {
+                    "markers": [
+                        {
+                            "type": "line",
+                            "range": [
+                                90
+                            ],
+                            "line-color": "#D31E1E"
+                        }
+                    ]
+                },
+                "series": [
+                    {
+                        "values": [
+                            35,
+                            42,
+                            67,
+                            89,
+                            25,
+                            34,
+                            67,
+                            85
+                        ]
+                    },
+                    {
+                        "values": [
+                            81,
+                            97,
+                            36,
+                            78,
+                            32,
+                            76,
+                            53,
+                            26
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {},
+        "states": {}
+    },
+    {
+        "render": {
+            "id": "areaMarkers",
+            "data": {
+                "type": "bar",
+                "theme": "light",
+                "title": {
+                    "text": "Area Markers"
+                },
+                "scale-y": {
+                    "markers": [
+                        {
+                            "type": "area",
+                            "range": [
+                                90,
+                                100
+                            ],
+                            "background-color": "#D31E1E",
+                            "alpha": 0.5
+                        }
+                    ]
+                },
+                "series": [
+                    {
+                        "values": [
+                            35,
+                            42,
+                            67,
+                            89,
+                            25,
+                            34,
+                            67,
+                            85
+                        ]
+                    },
+                    {
+                        "values": [
+                            81,
+                            97,
+                            36,
+                            78,
+                            32,
+                            76,
+                            53,
+                            26
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {},
+        "states": {}
+    },
+    {
+        "render": {
+            "id": "errors",
+            "data": {
+                "type": "line",
+                "theme": "light",
+                "title": {
+                    "text": "Error Bars"
+                },
+                "plot": {
+                    "errors": [
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ]
+                    ],
+                    "error": {
+                        "alpha": 0.7,
+                        "size": 0.9,
+                        "line-color": "black",
+                        "line-width": 2,
+                        "line-segment-size": 4,
+                        "line-gap-size": 2
+                    }
+                },
+                "scale-y": {
+                    "values": "-100:80:20"
+                },
+                "series": [
+                    {
+                        "values": [
+                            -80,
+                            -60,
+                            -80,
+                            -50,
+                            -80,
+                            -50,
+                            -20,
+                            -30,
+                            -20,
+                            10,
+                            40,
+                            20,
+                            15,
+                            25,
+                            20,
+                            30,
+                            40
+                        ],
+                        "line-width": 2,
+                        "marker": {
+                            "visible": false
+                        }
+                    }
+                ]
+            }
+        },
+        "options": {},
+        "states": {}
+    },
+    {
+        "render": {
+            "id": "dynamicLabels",
+            "data": {
+                "type": "area",
+                "theme": "light",
+                "utc": true,
+                "title": {
+                    "text": "Dynamic Labels"
+                },
+                "labels": [
+                    {
+                        "text": "Visitors: %plot-2-value",
+                        "default-value": "",
+                        "color": "#8da0cb",
+                        "x": "20%",
+                        "y": 50,
+                        "width": 120,
+                        "text-align": "left",
+                        "bold": 0,
+                        "font-size": "14px",
+                        "font-weight": "bold"
+                    },
+                    {
+                        "text": "Clicks: %plot-1-value",
+                        "default-value": "",
+                        "color": "#66c2a5",
+                        "x": "45%",
+                        "y": 50,
+                        "width": 120,
+                        "text-align": "left",
+                        "bold": 0,
+                        "font-size": "14px",
+                        "font-weight": "bold"
+                    },
+                    {
+                        "text": "Returns: %plot-0-value",
+                        "default-value": "",
+                        "color": "#fc8d62",
+                        "x": "70%",
+                        "y": 50,
+                        "width": 120,
+                        "text-align": "left",
+                        "bold": 0,
+                        "font-size": "14px",
+                        "font-weight": "bold"
+                    }
+                ],
+                "scale-x": {
+                    "label": {
+                        "text": "Date Range"
+                    },
+                    "zooming": 1,
+                    "max-labels": 12,
+                    "labels": [
+                        "Sept<br>19",
+                        "Sept<br>20",
+                        "Sept<br>21",
+                        "Sept<br>22",
+                        "Sept<br>23",
+                        "Sept<br>24",
+                        "Sept<br>25",
+                        "Sept<br>26",
+                        "Sept<br>27",
+                        "Sept<br>28",
+                        "Sept<br>29",
+                        "Sept<br>30"
+                    ],
+                    "max-items": 12,
+                    "items-overlap": true
+                },
+                "crosshair-x": {
+                    "plot-label": {
+                        "visible": false
+                    }
+                },
+                "scale-y": {
+                    "values": "0:2500:500",
+                    "label": {
+                        "text": "Metrics"
+                    }
+                },
+                "plot": {
+                    "tooltip": {
+                        "text": "There were %v %t on %data-days",
+                        "text-align": "left"
+                    }
+                },
+                "plotarea": {
+                    "margin-top": "10%"
+                },
+                "series": [
+                    {
+                        "values": [
+                            1204,
+                            1179,
+                            1146,
+                            1182,
+                            1058,
+                            1086,
+                            1141,
+                            1105,
+                            1202,
+                            992,
+                            373,
+                            466
+                        ],
+                        "data-days": [
+                            "Sept 19",
+                            "Sept 20",
+                            "Sept 21",
+                            "Sept 22",
+                            "Sept 23",
+                            "Sept 24",
+                            "Sept 25",
+                            "Sept 26",
+                            "Sept 27",
+                            "Sept 28",
+                            "Sept 29",
+                            "Sept 30"
+                        ],
+                        "aspect": "spline",
+                        "text": "returns"
+                    },
+                    {
+                        "values": [
+                            1625,
+                            1683,
+                            1659,
+                            1761,
+                            1904,
+                            1819,
+                            1631,
+                            1592,
+                            1498,
+                            1594,
+                            1782,
+                            1644
+                        ],
+                        "data-days": [
+                            "Sept 19",
+                            "Sept 20",
+                            "Sept 21",
+                            "Sept 22",
+                            "Sept 23",
+                            "Sept 24",
+                            "Sept 25",
+                            "Sept 26",
+                            "Sept 27",
+                            "Sept 28",
+                            "Sept 29",
+                            "Sept 30"
+                        ],
+                        "alpha-area": ".3",
+                        "text": "clicks",
+                        "aspect": "spline"
+                    },
+                    {
+                        "values": [
+                            314,
+                            1395,
+                            1292,
+                            1259,
+                            1269,
+                            1132,
+                            1012,
+                            1082,
+                            1116,
+                            1039,
+                            1132,
+                            1227
+                        ],
+                        "data-days": [
+                            "Sept 19",
+                            "Sept 20",
+                            "Sept 21",
+                            "Sept 22",
+                            "Sept 23",
+                            "Sept 24",
+                            "Sept 25",
+                            "Sept 26",
+                            "Sept 27",
+                            "Sept 28",
+                            "Sept 29",
+                            "Sept 30"
+                        ],
+                        "aspect": "spline",
+                        "text": "visitors"
+                    }
+                ]
+            }
+        },
+        "options": {},
+        "states": {}
+    },
+    {
+        "render": {
+            "id": "valueboxLabel",
+            "data": {
+                "type": "bar",
+                "theme": "light",
+                "title": {
+                    "text": "Value Boxes"
+                },
+                "plot": {
+                    "value-box": {
+                        "text": "%data-plot"
+                    }
+                },
+                "tooltip": {
+                    "text": "%data-formatted"
+                },
+                "scale-x": {
+                    "item": {
+                        "font-size": 10,
+                        "auto-align": true
+                    }
+                },
+                "series": [
+                    {
+                        "values": [
+                            50,
+                            66.666664,
+                            100,
+                            100,
+                            100,
+                            100,
+                            100,
+                            100,
+                            80,
+                            100
+                        ],
+                        "data-plot": [
+                            "50.0%",
+                            "66.7%",
+                            "100.0%",
+                            "100.0%",
+                            "100.0%",
+                            "100.0%",
+                            "100.0%",
+                            "100.0%",
+                            "80.0%",
+                            "100.0%"
+                        ],
+                        "data-formatted": [
+                            "1",
+                            "2",
+                            "2",
+                            "1",
+                            "1",
+                            "2",
+                            "1",
+                            "1",
+                            "8",
+                            "2"
+                        ]
+                    },
+                    {
+                        "values": [
+                            100,
+                            339.09677,
+                            103.88128,
+                            18.315018,
+                            207.5,
+                            172.28915,
+                            65.034966,
+                            133.4,
+                            1047.5037,
+                            10.080381
+                        ],
+                        "data-plot": [
+                            "100.0%",
+                            "339.1%",
+                            "103.9%",
+                            "18.3%",
+                            "207.5%",
+                            "172.3%",
+                            "65.0%",
+                            "133.4%",
+                            "1,047.5%",
+                            "10.1%"
+                        ],
+                        "data-formatted": [
+                            "$31,000",
+                            "$105,120",
+                            "$109,200",
+                            "$20,000",
+                            "$41,500",
+                            "$71,500",
+                            "$46,500",
+                            "$62,031",
+                            "$649,777",
+                            "$65,500"
+                        ]
+                    }
+                ],
+                "scale-y": {
+                    "max-value": 2000,
+                    "progression": "log"
+                }
+            }
+        },
+        "options": {},
+        "states": {}
+    },
+    {
+        "render": {
+            "id": "callouts",
+            "data": {
+                "theme": "light",
+                "title": {
+                    "text": "Arrows"
+                },
+                "scale-x": {
+                    "zooming": 1
+                },
+                "arrows": [
+                    {
+                        "from": {
+                            "x": 400,
+                            "y": 200
+                        },
+                        "to": {
+                            "x": 300,
+                            "y": 305
+                        }
+                    }
+                ],
+                "scale": {
+                    "size-factor": 0.9
+                },
+                "type": "scatter",
+                "series": [
+                    {
+                        "values": [
+                            [
+                                0,
+                                83
+                            ],
+                            [
+                                1,
+                                73
+                            ],
+                            [
+                                2,
+                                146
+                            ],
+                            [
+                                3,
+                                165
+                            ],
+                            [
+                                4,
+                                141
+                            ],
+                            [
+                                5,
+                                61
+                            ],
+                            [
+                                6,
+                                96
+                            ],
+                            [
+                                7,
+                                62
+                            ],
+                            [
+                                8,
+                                161
+                            ],
+                            [
+                                9,
+                                108
+                            ],
+                            [
+                                10,
+                                21
+                            ],
+                            [
+                                11,
+                                169
+                            ],
+                            [
+                                12,
+                                168
+                            ],
+                            [
+                                13,
+                                61
+                            ],
+                            [
+                                14,
+                                161
+                            ],
+                            [
+                                15,
+                                78
+                            ],
+                            [
+                                16,
+                                107
+                            ],
+                            [
+                                17,
+                                97
+                            ],
+                            [
+                                18,
+                                160
+                            ],
+                            [
+                                19,
+                                159
+                            ],
+                            [
+                                20,
+                                153
+                            ]
+                        ]
+                    },
+                    {
+                        "values": [
+                            [
+                                0,
+                                107
+                            ],
+                            [
+                                1,
+                                68
+                            ],
+                            [
+                                2,
+                                130
+                            ],
+                            [
+                                3,
+                                163
+                            ],
+                            [
+                                4,
+                                190
+                            ],
+                            [
+                                5,
+                                163
+                            ],
+                            [
+                                6,
+                                145
+                            ],
+                            [
+                                7,
+                                115
+                            ],
+                            [
+                                8,
+                                99
+                            ],
+                            [
+                                9,
+                                190
+                            ],
+                            [
+                                10,
+                                151
+                            ],
+                            [
+                                11,
+                                68
+                            ],
+                            [
+                                12,
+                                109
+                            ],
+                            [
+                                13,
+                                154
+                            ],
+                            [
+                                14,
+                                151
+                            ],
+                            [
+                                15,
+                                100
+                            ],
+                            [
+                                16,
+                                96
+                            ],
+                            [
+                                17,
+                                158
+                            ],
+                            [
+                                18,
+                                111
+                            ],
+                            [
+                                19,
+                                185
+                            ],
+                            [
+                                20,
+                                176
+                            ]
+                        ]
+                    },
+                    {
+                        "values": [
+                            [
+                                0,
+                                107
+                            ],
+                            [
+                                1,
+                                112
+                            ],
+                            [
+                                2,
+                                134
+                            ],
+                            [
+                                3,
+                                133
+                            ],
+                            [
+                                4,
+                                145
+                            ],
+                            [
+                                5,
+                                142
+                            ],
+                            [
+                                6,
+                                160
+                            ],
+                            [
+                                7,
+                                144
+                            ],
+                            [
+                                8,
+                                166
+                            ],
+                            [
+                                9,
+                                179
+                            ],
+                            [
+                                10,
+                                50
+                            ],
+                            [
+                                11,
+                                190
+                            ],
+                            [
+                                12,
+                                193
+                            ],
+                            [
+                                13,
+                                184
+                            ],
+                            [
+                                14,
+                                218
+                            ],
+                            [
+                                15,
+                                220
+                            ],
+                            [
+                                16,
+                                243
+                            ],
+                            [
+                                17,
+                                235
+                            ],
+                            [
+                                18,
+                                250
+                            ],
+                            [
+                                19,
+                                258
+                            ],
+                            [
+                                20,
+                                269
+                            ]
+                        ]
+                    },
+                    {
+                        "values": [
+                            [
+                                0,
+                                284
+                            ],
+                            [
+                                1,
+                                243
+                            ],
+                            [
+                                2,
+                                237
+                            ],
+                            [
+                                3,
+                                273
+                            ],
+                            [
+                                4,
+                                248
+                            ],
+                            [
+                                5,
+                                245
+                            ],
+                            [
+                                6,
+                                276
+                            ],
+                            [
+                                7,
+                                162
+                            ],
+                            [
+                                8,
+                                186
+                            ],
+                            [
+                                9,
+                                144
+                            ],
+                            [
+                                10,
+                                252
+                            ],
+                            [
+                                11,
+                                190
+                            ],
+                            [
+                                12,
+                                216
+                            ],
+                            [
+                                13,
+                                247
+                            ],
+                            [
+                                14,
+                                255
+                            ],
+                            [
+                                15,
+                                189
+                            ],
+                            [
+                                16,
+                                180
+                            ],
+                            [
+                                17,
+                                158
+                            ],
+                            [
+                                18,
+                                277
+                            ],
+                            [
+                                19,
+                                245
+                            ],
+                            [
+                                20,
+                                173
+                            ]
+                        ]
+                    }
+                ]
+            }
+        },
+        "options": {},
+        "states": {}
+    },
+    {
+        "render": {
+            "data": {
+                "type": "line",
+                "theme": "light",
+                "title": {
+                    "text": "Axis Labels"
+                },
+                "scale-x": {
+                    "label": {
+                        "text": "Time (ms)"
+                    }
+                },
+                "scale-y": {
+                    "label": {
+                        "text": "Speed (m/s)"
+                    }
+                },
+                "series": [
+                    {
+                        "values": [
+                            97,
+                            83,
+                            86,
+                            73,
+                            24,
+                            76,
+                            54,
+                            23
+                        ]
+                    },
+                    {
+                        "values": [
+                            89,
+                            86,
+                            72,
+                            43,
+                            65,
+                            23,
+                            49,
+                            78
+                        ]
+                    }
+                ]
+            },
+            "id": "axisLabels"
+        }
+    },
+    {
+        "render": {
+            "data": {
+                "type": "line",
+                "theme": "light",
+                "title": {
+                    "text": "Sources"
+                },
+                "source": {
+                    "text": "Source: NWA"
+                },
+                "series": [
+                    {
+                        "values": [
+                            97,
+                            83,
+                            86,
+                            73,
+                            24,
+                            76,
+                            54,
+                            23
+                        ]
+                    },
+                    {
+                        "values": [
+                            89,
+                            86,
+                            72,
+                            43,
+                            65,
+                            23,
+                            49,
+                            78
+                        ]
+                    }
+                ]
+            },
+            "id": "source"
+        }
+    },
+    {
+        "render": {
+            "data": {
+                "type": "bar",
+                "theme": "light",
+                "title": {
+                    "text": "Percentages"
+                },
+                "scale-x": {
+                    "label": {
+                        "text": "Percentages"
+                    },
+                    "values": [
+                        "<25%",
+                        "<50%",
+                        ">50%",
+                        ">75%"
+                    ]
+                },
+                "series": [
+                    {
+                        "values": [
+                            11,
+                            26,
+                            7,
+                            44
+                        ],
+                        "palette": 0
+                    },
+                    {
+                        "values": [
+                            8,
+                            31,
+                            12,
+                            40
+                        ],
+                        "palette": 1
+                    },
+                    {
+                        "values": [
+                            18,
+                            27,
+                            17,
+                            30
+                        ],
+                        "palette": 2
+                    }
+                ]
+            },
+            "id": "percentages"
+        }
+    },
+    {
+        "render": {
+            "data": {
+                "type": "bar",
+                "theme": "light",
+                "title":{
+                  "text":"Short Units"
+                  },
+                "scale-x": {
+                    "values": "0:10000000:1000000",
+                    "multiplier": true,
+                    "short-unit": "M"
+                },
+                "scale-y": {
+                    "multiplier": true,
+                    "short-unit": "k"
+                },
+                "series": [
+                    {
+                        "values": [
+                            117600,
+                            268600,
+                            70680,
+                            441020,
+                            110086,
+                            280450,
+                            423500,
+                            264050,
+                            131007,
+                            103080,
+                            140400
+                        ]
+                    }
+                ]
+            },
+            "id": "shortUnits"
+        }
+    },
+    {
+        "render": {
+            "data": {
+                "type": "bar",
+                "theme": "light",
+                "title":{
+                  "text":"Scientific Notation"
+                  },
+                "scale-y": {
+                    "min-value": "0",
+                    "max-value": "1000000000000",
+                    "exponent": true
+                },
+                "plot": {
+                    "value-box": {
+                        "exponent": true
+                    }
+                },
+                "series": [
+                    {
+                        "values": [
+                            98767682367,
+                            783427864867,
+                            934278934276,
+                            894236743267
+                        ]
+                    }
+                ]
+            },
+            "id": "scientificNotation"
+        }
+    },
+    {
+        "render": {
+            "data": {
+                "type": "mixed",
+                "theme": "light",
+                "title": {
+                    "text": "Special Characters ® © ™ ♥"
+                },
+                "scale-x": {
+                    "values": [
+                        "Jan",
+                        "Feb",
+                        "Mar",
+                        "Apr"
+                    ],
+                    "guide": {
+                        "line-width": "1px",
+                        "line-style": "solid"
+                    },
+                    "item": {
+                        "font-size": "10px",
+                        "visible": true
+                    }
+                },
+                "scale-y": {
+                    "values": "0:50:10",
+                    "line-width": "1px",
+                    "line-style": "solid",
+                    "tick": {
+                        "visible": true,
+                        "placement": "outer",
+                        "size": "12px"
+                    },
+                    "item": {
+                        "font-size": "10px",
+                        "visible": true
+                    },
+                    "guide": {
+                        "line-width": "1px",
+                        "line-style": "solid"
+                    }
+                },
+                "plot": {
+                    "alpha": 1,
+                    "hover-state": {
+                        "visible": false
+                    }
+                },
+                "series": [
+                    {
+                        "type": "bar",
+                        "values": [
+                            47,
+                            32,
+                            37,
+                            48
+                        ],
+                        "text": "Safari",
+                        "background-color": "#7eac10"
+                    }
+                ]
+            },
+            "id": "specialCharacters"
+        }
+    },
+    {
+        "render": {
+            "data": {
+                "type": "stock",
+                "theme": "light",
+                "title": {
+                    "text": "Currency"
+                },
+                "plot": {
+                    "aspect": "whisker",
+                    "line-width": 2
+                },
+                "plotarea": {
+                    "margin-left": 60
+                },
+                "scale-x": {
+                    "values": [
+                        "Nov 4, 2013",
+                        "Nov 5, 2013",
+                        "Nov 6, 2013",
+                        "Nov 7, 2013",
+                        "Nov 8, 2013"
+                    ]
+                },
+                "scale-y": {
+                    "format": "$%v",
+                    "decimals": 2,
+                    "negation": "currency"
+                },
+                "tooltip": {
+                    "text": "Open: $%v0 &nbsp; High: $%v1 &nbsp; Low: $%v2 &nbsp; Close: $%v3",
+                    "decimals": 2
+                },
+                "series": [
+                    {
+                        "values": [
+                            [
+                                4.11,
+                                4.85,
+                                3.31,
+                                3.55
+                            ],
+                            [
+                                3.1,
+                                4.44,
+                                2.56,
+                                2.88
+                            ],
+                            [
+                                5.25,
+                                6.3,
+                                4.71,
+                                5.9
+                            ],
+                            [
+                                5.56,
+                                5.67,
+                                4.48,
+                                4.89
+                            ],
+                            [
+                                5.03,
+                                5.96,
+                                4.02,
+                                5.9
+                            ]
+                        ]
+                    },
+                    {
+                        "values": [
+                            [
+                                5.21,
+                                5.45,
+                                4.81,
+                                4.95
+                            ],
+                            [
+                                -2.1,
+                                1.04,
+                                -2.16,
+                                -1.28
+                            ],
+                            [
+                                4.55,
+                                5.4,
+                                3.31,
+                                4.1
+                            ],
+                            [
+                                6.86,
+                                6.97,
+                                5.18,
+                                5.59
+                            ],
+                            [
+                                6.13,
+                                6.26,
+                                5.12,
+                                6
+                            ]
+                        ]
+                    },
+                    {
+                        "values": [
+                            [
+                                -1.31,
+                                0.95,
+                                -1.81,
+                                -1.55
+                            ],
+                            [
+                                4.2,
+                                5.44,
+                                3.56,
+                                3.48
+                            ],
+                            [
+                                5.45,
+                                6.5,
+                                4.71,
+                                5.8
+                            ],
+                            [
+                                4.46,
+                                4.97,
+                                3.49,
+                                3.49
+                            ],
+                            [
+                                4.23,
+                                4.76,
+                                3.52,
+                                4.7
+                            ]
+                        ]
+                    }
+                ]
+            },
+            "id": "currency"
+        }
+    },
+    {
+        "render": {
+            "data":  {
+                        "type": "bar",
+                        "theme": "light",
+                        "title": {
+                            "text": "Decimals Separator"
+                        },
+                        "tooltip":{
+                          "decimals-separator":","
+                          },
+                        "scale-x": {
+                            "values": ".357:5.75:1.62342",
+                            "decimals": 2,
+                            "decimals-separator": ","
+                        },
+                        "series": [
+                            {
+                                "values": [
+                                    11.23,
+                                    16.63,
+                                    7.38,
+                                    14.91
+                                ]
+                            },
+                            {
+                                "values": [
+                                    28.10,
+                                    35.72,
+                                    22.79,
+                                    35.13
+                                ]
+                            }
+                        ]
+            },
+            "id": "decimalsSeparator"
+        }
+    },
+    {
+        "render": {
+            "data": {
+                "type": "bar",
+                "theme": "light",
+                "title":{
+                  "text":"Thousands Separator"
+                  },
+                "plotarea": {
+                    "margin-left": "12%"
+                },
+                "scale-y": {
+                    "min-value": "0",
+                    "max-value": "1000000000000",
+                    "short": true,
+                    "short-unit": "M",
+                    "thousands-separator": "."
+                },
+                "plot": {
+                    "value-box": {
+                        "thousands-separator":"."
+                    }
+                },
+                "series": [
+                    {
+                        "values": [
+                            98000000000,
+                            783000000000,
+                            934000000000,
+                            894000000000
+                        ]
+                    }
+                ]
+            },
+            "id": "thousandsSeparator"
+        }
+    }
+]

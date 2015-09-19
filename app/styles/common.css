@@ -1,0 +1,136 @@
+@charset "UTF-8";
+body {
+  font-family: Roboto;
+  background-image: url(../img/kitchen-sink-bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  /*background-color: white; */ }
+
+.flex-item {
+  margin-bottom: 60px;
+  z-index: 1;
+  background-color: #fff;
+  /* flex-grow: 1; */
+  /*min-width: 25%; */ }
+
+.flex-options {
+  height: 40px; }
+
+.flex-nav {
+  align-self: stretch;
+  float: left;
+  margin-top: 14px; }
+
+.flex-nav-list {
+  list-style-type: none;
+  padding: 0px; }
+  .flex-nav-list li {
+    color: rgba(255, 255, 255, 0.8);
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+    transition: .2s; }
+    .flex-nav-list li:hover {
+      color: #fff; }
+    .flex-nav-list li.active {
+      color: #1FBBED; }
+      .flex-nav-list li.active:after {
+        content: '▾'; }
+
+.flex-nav-list-item {
+  padding: 8px 16px;
+  cursor: pointer; }
+
+.main-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #000;
+  height: 80px;
+  color: #fff;
+  padding-left: 20px;
+  z-index: 2; }
+  .main-nav .zc-logo {
+    float: left;
+    margin-right: 10px;
+    margin-top: 7px;
+    width: 146px;
+    height: 49px;
+    background-image: url(../img/zc-logo.png); }
+  .main-nav h1 {
+    float: left;
+    font-family: Helvetica;
+    margin-top: 25px;
+    width: 214px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5); }
+
+#chart-container {
+  margin-top: 120px; }
+
+#theme-picker {
+  float: left;
+  background-color: black;
+  color: #1FBBED;
+  font-size: 15pt;
+  border-width: 1px;
+  border-radius: 6px;
+  border-color: rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
+  padding-left: 16px;
+  height: 40px;
+  font-weight: none;
+  appearance: none; }
+
+label.select-appearance {
+  position: relative; }
+  label.select-appearance:after {
+    content: '▾';
+    font: 14px "Roboto", monospace;
+    color: #1FBBED;
+    right: 16px;
+    top: 45px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none; }
+  label.select-appearance:before {
+    content: '';
+    right: 6px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    pointer-events: none;
+    display: block; }
+
+#loading-shutter {
+  height: 1080px;
+  width: 1920px;
+  background-color: #000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2; }
+
+.shutter-content {
+  margin: 0 auto;
+  width: 100%;
+  align: center;
+  color: rgba(255, 255, 255, 0.7); }
+
+.btn {
+  border: 1px solid grey;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #1FBBED;
+  font-weight: bold;
+  padding: 8px; }
+
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,1 @@
+define(["require","exports","module","backbone","../models/chart"],function(e,t,n){var r=e("backbone"),i=e("../models/chart"),s=r.Collection.extend({model:i});n.exports=s});
