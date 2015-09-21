@@ -1107,13 +1107,13 @@
     {
         "render": {
             "data": {
-                "backgroundColor": "#221F1F",
+                "background-color": "#221F1F",
                 "type": "null",
                 "widgets": [
                     {
                         "type": "dashboard_datetime",
-                        "width": 240,
-                        "height": 240,
+                        "width": 398.33333,
+                        "height": 185,
                         "x": 10,
                         "y": 10,
                         "id": "dash1",
@@ -1123,9 +1123,9 @@
                     },
                     {
                         "type": "dashboard_metric",
-                        "width": 240,
-                        "height": 240,
-                        "x": 260,
+                        "width": 398.33333,
+                        "height": 185,
+                        "x": 408.33333,
                         "y": 10,
                         "title": "VIRAL COEFFICIENT",
                         "value": 813.74,
@@ -1136,18 +1136,18 @@
                     },
                     {
                         "type": "dashboard_accounts",
-                        "width": 240,
-                        "height": 240,
-                        "x": 510,
+                        "width": 398.33333,
+                        "height": 380,
+                        "x": 816.66666,
                         "y": 10,
                         "id": "dash3"
                     },
                     {
                         "type": "dashboard_metric",
-                        "width": 240,
-                        "height": 240,
+                        "width": 398.33333,
+                        "height": 185,
                         "x": 10,
-                        "y": 260,
+                        "y": 205,
                         "title": "RETENTION RATE (30 DAYS)",
                         "value": 83.18,
                         "percent": -21.27,
@@ -1157,10 +1157,10 @@
                     },
                     {
                         "type": "dashboard_metric",
-                        "width": 490,
-                        "height": 240,
+                        "width": 398.33333,
+                        "height": 185,
                         "x": 260,
-                        "y": 260,
+                        "y": 205,
                         "title": "AVG TIME ON SITE",
                         "value": "487.32",
                         "percent": 4.37,

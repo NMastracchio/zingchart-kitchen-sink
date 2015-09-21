@@ -8,6 +8,7 @@ define(function(require, exports, module){
     file: null,
     template: _.template($('#ChartTemplate').html()),
     initialize: function(attributes){
+      console.log(this.template);
       var self = this;
       this.file = attributes.file;
       /* Create new collection */
@@ -69,8 +70,45 @@ define(function(require, exports, module){
         }
         
       });
+
+      /* 
+      * We are keeping track of the number of charts that are in a page, and 
+      * how many have been loaded so that we can raise the loading shutter
+      * after all of the chart in the page have been raised.
+      */
+      var numToRender = 0;
       var numRendered = 0;
-      var numToRender = this.coll.length;
+
+      /* 
+      * Go through each of the models in the collection,
+      * if the model has a render attr, we must wait for it to render
+      * before raising the loading shutter. Some charts use iframes which will
+      * not trigger the zingchart.load event, so we don't want to get the
+      * shutter locked in those cases.
+      */
+      this.coll.each(function(model){
+        if (model.attributes.render.attributes.data) {
+          numToRender++;
+        }
+      });
+
+      /*
+      * If numToRender is 0, there are no charts that need to be loaded within
+      * the page, so raise the shutter.
+      */
+      console.log(numToRender);
+      if (!numToRender) {
+        window.setTimeout(function(){
+          $('#loading-shutter').animate({
+            top: "-=1080"
+          },500);
+        },1000);
+      }
+
+      /*
+      * After each chart has been loaded, increment numRendered and check to
+      * see if it equals the total number of charts that must be rendered
+      */
       zingchart.load = function(){
         numRendered++;
         if (numRendered == numToRender) {

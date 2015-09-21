@@ -213,7 +213,7 @@
                   "text":"Treemap"
                   },
                 "plotarea": {
-                    "margin": "60 0 0 0"
+                    "margin": "60 20 0 20"
                 },
                 "tooltip": {},
                 "options": {},

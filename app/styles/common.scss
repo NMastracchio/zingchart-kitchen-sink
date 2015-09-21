@@ -3,6 +3,9 @@ body {
   background-image: url(../img/kitchen-sink-bg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 1920px;
+  height: 1080px;
+  margin:0 auto;
 }
 
 .flex-container {
@@ -145,7 +148,7 @@ label.select-appearance {
 }
 
 .btn {
-  border:1px solid grey;
+  border:1px solid rgba(0,0,0,0.25);
   border-radius: 6px;
   cursor: pointer;
   color: #1FBBED;

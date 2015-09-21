@@ -12,9 +12,6 @@
         "title":{
             "text":"Isometric 3D"
         },
-        "plotarea":{
-            "background-color":"#fff"
-        },
         "series":[
             {
                 "values":[11,26,7,14,11,28]
@@ -152,7 +149,6 @@
         "type":"bar",
         "theme":"light",
         "title":{
-            "y":"0px",
             "text":"Plot Transparency"
         },
         "plot":{
@@ -161,20 +157,12 @@
                 "alpha":1
             }
         },
-        "plotarea":{
-            "background-color":"#fff"
-        },
         "scale-x":{
             "guide":{
                 "visible":false
             }
         },
         "scale-y":{
-            "guide":{
-                "line-style":"solid",
-                "line-width":1,
-                "line-color":"#333"
-            },
             "markers":[
                 {
                     "type":"area",
@@ -308,9 +296,6 @@
         "theme":"light",
         "title":{
             "text":"Font Families"
-        },
-        "plotarea":{
-            "background-color":"#fff"
         },
         "scale-x":{
             "guide":{

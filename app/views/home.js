@@ -22,7 +22,6 @@ define(function(require, exports, module){
       },500, function(){
         var router = require('../main');
         var routeName = $(event.target).data('route');
-        console.log(router);
         router.navigate(routeName, {trigger: true});
       });
     },
@@ -32,6 +31,7 @@ define(function(require, exports, module){
       * destroys the model's currently rendered chart, and sets the 
       * theme name. 
       */
+      var router = require('../main');
       var applyTheme = function(model, themeName){
         var renderModel = model.get('render');
         var modelData = _.clone(renderModel.get('data'));

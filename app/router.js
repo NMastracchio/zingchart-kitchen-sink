@@ -5,6 +5,15 @@ define(function(require, exports, module) {
 
   var Router = Backbone.Router.extend({
     currentView: null,
+    clearIntervals: function(){
+      for (var key in zingchart.widgets) {
+        window.clearInterval(zingchart.widgets[key].interval);
+      }
+      /* Kill the update function. Clear the interval just wasn't enough. */
+      if (zingchart.widgets.dashboard_metric) {
+        zingchart.widgets.dashboard_metric.update = function(){};
+      }
+    },
     initialize: function(){
       var mainView = new MainView();
     },
@@ -20,6 +29,7 @@ define(function(require, exports, module) {
       'integration'     : 'integration'
     },
     charts: function(){
+      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -29,6 +39,7 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     maps: function(){
+      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -38,6 +49,7 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     visualizations: function(){
+      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -47,6 +59,7 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     interactive: function(){
+      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -56,6 +69,7 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     markers: function(){
+      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -65,6 +79,7 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     design: function(){
+      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -74,6 +89,7 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     customization: function(){
+      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -83,6 +99,7 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     integration: function(){
+      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -92,6 +109,7 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     setRouteActive: function(current){
+      this.clearIntervals();
       var listElem = $("div.flex-nav").find("[data-route='" + current + "']");
       listElem.addClass('active');
       listElem.siblings().removeClass('active');

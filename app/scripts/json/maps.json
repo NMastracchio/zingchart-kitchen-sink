@@ -34,6 +34,9 @@
         "title":{
           "text":"United States"
         },
+        "subtitle":{
+          "text":"We offer individual country maps!"
+        },
         "shapes":[
           {
             "type":"zingchart.maps",
@@ -58,6 +61,9 @@
         "theme": "zingchart",
         "title":{
           "text":"California Counties"
+        },
+        "subtitle":{
+          "We also have individual state maps!"
         },
         "shapes":[
           {

@@ -39,6 +39,7 @@ zingchart.widgets.dashboard_container = {
 };
  
 zingchart.widgets.dashboard_datetime = {
+    interval: null,
     tinfo : function() {
         
         var dow = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -87,7 +88,7 @@ zingchart.widgets.dashboard_datetime = {
         
         var json = zingchart.widgets.dashboard_container.parse(data);
         
-        window.setInterval(function() {
+        zingchart.widgets.dashboard_datetime.interval = window.setInterval(function() {
             zingchart.widgets.dashboard_datetime.update(data.loader.id, id, {
                 time : Math.random()
             });
@@ -138,7 +139,7 @@ zingchart.widgets.dashboard_datetime = {
                 flat:true
             },
             {
-                text:tinfo.dow,
+                text:tinfo.dow + ",",
                 color:"#eee",
                 fontSize:27,
                 x:x+2,
@@ -152,8 +153,8 @@ zingchart.widgets.dashboard_datetime = {
                 text:tinfo.day,
                 color:"#eee",
                 fontSize:27,
-                x:x+2,
-                y:y+164,
+                x:x+120,
+                y:y+130,
                 width:w,
                 textAlign:"left",
                 padding:"8 8 8 8",
@@ -201,6 +202,7 @@ zingchart.widgets.dashboard_datetime = {
 }
  
 zingchart.widgets.dashboard_metric = {
+    interval : null,
     percent : function(percent) {
         var ps = (String(Math.abs(percent))).split('.');
         var p1 = ps[0] || '0';
@@ -211,28 +213,28 @@ zingchart.widgets.dashboard_metric = {
         var value = parseFloat(Number(1000*Math.random()).toFixed(2));
         var percent = parseFloat(Number(-10 + 20*Math.random()).toFixed(2));
         zingchart.exec(chartid, 'updateobject', {
-            data:[
-                {
-                    objtype:"label",
-                    id:snippetid+"_value_sh",
-                    text:value
-                },{
-                    objtype:"label",
-                    id:snippetid+"_value",
-                    text:value
-                },{
-                    objtype:"label",
-                    id:snippetid+"_percent",
-                    color:(percent>0)?"#77AB13":"#AE432E",
-                    text:zingchart.widgets.dashboard_metric.percent(percent)
-                },{
-                    objtype:"shape",
-                    id:snippetid+"_trend",
-                    angle:(percent>0)?0:180,
-                    backgroundColor:(percent>0)?"#77AB13":"#AE432E"
-                }
-            ]
-        });
+          data:[
+              {
+                  objtype:"label",
+                  id:snippetid+"_value_sh",
+                  text:value
+              },{
+                  objtype:"label",
+                  id:snippetid+"_value",
+                  text:value
+              },{
+                  objtype:"label",
+                  id:snippetid+"_percent",
+                  color:(percent>0)?"#77AB13":"#AE432E",
+                  text:zingchart.widgets.dashboard_metric.percent(percent)
+              },{
+                  objtype:"shape",
+                  id:snippetid+"_trend",
+                  angle:(percent>0)?0:180,
+                  backgroundColor:(percent>0)?"#77AB13":"#AE432E"
+              }
+          ]
+      });
     },
     parse : function(data) {
         var x = data.x || 0;
@@ -246,11 +248,11 @@ zingchart.widgets.dashboard_metric = {
     
         var json = zingchart.widgets.dashboard_container.parse(data);
         
-        window.setInterval(function() {
+        zingchart.widgets.dashboard_metric.interval = window.setInterval(function() {
             zingchart.widgets.dashboard_metric.update(data.loader.id, id, {
                 
             });
-        }, 2000+parseInt(2000*Math.random(), 10));
+        }, 5000);
         
         json.labels.push(
             {
@@ -341,6 +343,7 @@ zingchart.widgets.dashboard_metric = {
 };
  
 zingchart.widgets.dashboard_accounts = {
+    interval : null,
     update : function(chartid, snippetid, params) {
         zingchart.exec(chartid, 'setseriesvalues', {
             graphid : snippetid+"_graph",
@@ -361,7 +364,7 @@ zingchart.widgets.dashboard_accounts = {
         
         var json = zingchart.widgets.dashboard_container.parse(data);
         
-        window.setInterval(function() {
+        zingchart.widgets.dashboard_accounts.interval = window.setInterval(function() {
             zingchart.widgets.dashboard_accounts.update(data.loader.id, id, {});
         }, 5000);
  
