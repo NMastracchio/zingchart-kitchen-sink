@@ -229,7 +229,7 @@
   {
     "render":{
       "data":{
-        "type":"bar",
+        "type":"line",
         "theme":"light",
         "title":{
           "text":"Minimizable Legend"
@@ -848,8 +848,8 @@
         "labels":[
             {
                 "text":"Toggle legend items, hover, and zoom<br>to see shared chart interactions.",
-                "x":"65%",
-                "y":"16.3%",
+                "x":"70%",
+                "y":"12.0%",
                 "text-align":"left",
                 "background-color":"white",
                 "border-width":1,

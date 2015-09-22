@@ -3070,16 +3070,6 @@
                 ]
             },
             "id": "waterfall"
-        },
-        "options":{
-          "orientation": false  
-        },
-        "states":{
-          "isRotated": false,
-          "orientations": [
-                "waterfall",
-                "hwaterfall"
-            ]
         }
     }
 ]

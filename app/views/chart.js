@@ -185,6 +185,13 @@ define(function(require, exports, module){
         case 'toggleAction':
           modelData.legend['toggle-action'] = val;
           break;
+        case 'legendPositioning':
+            if (val == 'top' || val == 'middle' || val == 'bottom') {
+              modelData.legend['vertical-align'] = val;
+            } else {
+              modelData.legend['align'] = val;
+            }
+          break;
         case 'radarChart':
           if (val == 'mixed') {
             modelData.series = modelStates.altSeries;
