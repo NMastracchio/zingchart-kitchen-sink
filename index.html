@@ -95,7 +95,7 @@
   <script type="text/template" id="ChartTemplate">
     <div id="chart-container" class="flex-container">
       <% _.each(charts, function(chart) { %>
-        <div class="flex-item" <%= chart.type == 'iframe' ? "style='width:100%;'" : '' %> >
+        <div class="flex-item <%= info.theme %>" <%= chart.type == 'iframe' ? "style='width:100%;'" : '' %> >
           <% if (chart.type && chart.type == 'iframe') { %>
             <% if (chart.header) { %>
               <<%= chart.header.element %>>
@@ -114,7 +114,7 @@
               <div class="flex-container flex-options">
                   <% if ( _.has(chart.options, 'select-labels') && ( chart.options['select-labels'].length == chart.options.selects.length) ) { %>
                     <% _.each(chart.options['select-labels'], function(label, idx){ %>
-                      <div class="flex-item">
+                      <div class="flex-item <%= info.theme %>">
                         <label> <%= label %> </label>
                         <label class="aspect-select-appearance">
                           <select class="aspect-select" id="<%= chart.render.id + '-aspect' %>">

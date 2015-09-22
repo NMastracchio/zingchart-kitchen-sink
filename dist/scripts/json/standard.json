@@ -45,7 +45,8 @@
                         ]
                     }
                 ]
-            }
+            },
+            "height": 360
         },
         "options": {
             "select-labels": [
@@ -129,7 +130,8 @@
                         ]
                     }
                 ]
-            }
+            },
+            "height": 360
         },
         "options": {
             "select-labels": [
@@ -213,7 +215,8 @@
                         ]
                     }
                 ]
-            }
+            },
+            "height": 360
         },
         "options": {
             "select-labels": [
@@ -292,7 +295,8 @@
                         "text": "Wyoming"
                     }
                 ]
-            }
+            },
+            "height": 360
         },
         "options": {
             "select-labels": [
@@ -704,7 +708,8 @@
                         ]
                     }
                 ]
-            }
+            },
+            "height": 360
         },
         "options": {
             "markers": true
@@ -821,7 +826,8 @@
                         ]
                     }
                 ]
-            }
+            },
+            "height": 360
         },
         "options": {
             "select-labels": [
@@ -2478,7 +2484,8 @@
                         "text": "W"
                     }
                 ]
-            }
+            },
+            "height": 360
         },
         "options": {
             "select-labels": [
@@ -2569,7 +2576,8 @@
                         ]
                     }
                 ]
-            }
+            },
+            "height": 360
         },
         "options": {
             "select-labels": [
@@ -2668,7 +2676,8 @@
                         ]
                     }
                 ]
-            }
+            },
+            "height": 360
         },
         "options": {
             "orientation": true
@@ -2992,7 +3001,8 @@
                         "id": "type2"
                     }
                 ]
-            }
+            },
+            "height": 360
         },
         "options": {
             "types": [
@@ -3080,7 +3090,8 @@
                         ]
                     }
                 ]
-            }
+            },
+            "height": 360
         },
         "options": {
             "stack": true
@@ -3148,7 +3159,8 @@
                 "normal",
                 "100%"
             ]
-        }
+        },
+        "height": 360
     },
     {
         "render": {

@@ -9,7 +9,7 @@ define(function(require, exports, module) {
       for (var key in zingchart.widgets) {
         window.clearInterval(zingchart.widgets[key].interval);
       }
-      /* Kill the update function. Clear the interval just wasn't enough. */
+      /* Kill the update function. Clearing the interval just wasn't enough. */
       if (zingchart.widgets.dashboard_metric) {
         zingchart.widgets.dashboard_metric.update = function(){};
       }

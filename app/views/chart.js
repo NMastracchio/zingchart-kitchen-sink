@@ -1,6 +1,7 @@
 define(function(require, exports, module){
   var Backbone = require('backbone');
   var ChartCollection = require('collections/charts');
+  var InfoModel = require('../models/info');
 
   /* Chart collection view */
   var ChartCollectionView = Backbone.View.extend({
@@ -8,8 +9,8 @@ define(function(require, exports, module){
     file: null,
     template: _.template($('#ChartTemplate').html()),
     initialize: function(attributes){
-      console.log(this.template);
       var self = this;
+      this.infoModel = new InfoModel();
       this.file = attributes.file;
       /* Create new collection */
       this.coll = new ChartCollection();
@@ -35,7 +36,12 @@ define(function(require, exports, module){
     },
     render: function() {
       /* Creates the chart <div> elements */
-      this.$el.html(this.template({ charts: this.coll.toJSON() }));
+      var themeName = $('#theme-picker').val();
+      this.infoModel.set('theme',themeName);
+      this.$el.html(this.template({ 
+        charts: this.coll.toJSON(), 
+        info: this.infoModel.toJSON() 
+      }));
       this.coll.each(function(chart){
         var config = chart.get('render').attributes;
         var script = chart.attributes.script;

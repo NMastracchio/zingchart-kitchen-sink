@@ -1,0 +1,1 @@
+define(["require","exports","module","backbone"],function(e,t,n){var r=e("backbone"),i=r.Model.extend({defaults:{theme:"zingchart"},initialize:function(){this.on("change",this.changeTheme,this)},changeTheme:function(){}});n.exports=i});

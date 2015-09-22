@@ -24,9 +24,9 @@ module.exports = function(grunt){
       },
       src: {
         files: [
-          '/Users/nmastracchio/Documents/ZingChart/zingchart-dev/src/*',
-          '/Users/nmastracchio/Documents/ZingChart/zingchart-dev/src/*/*',
-          '/Users/nmastracchio/Documents/ZingChart/zingchart-dev/src/*/*/*'
+          '/Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/lib/zingchart-dev/src/*',
+          '/Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/lib/zingchart-dev/src/*/*',
+          '/Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/lib/zingchart-dev/src/*/*/*'
         ],
         tasks: ['shell']
       },
@@ -54,14 +54,14 @@ module.exports = function(grunt){
         stderr: false
       },
       target: {
-        command: 'cd /Users/nmastracchio/Documents/ZingChart/zingchart-dev/build/;' 
+        command: 'cd /Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/lib/zingchart-dev/build/;' 
           + 'php index.php -DEV;' 
-          + 'cp zingchart.min.js /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client;'
-          + 'cp -r modules/* /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules;'
-          + 'mv /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-populationpyramid.js ' 
-          + '/Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-populationpyramid.min.js;'
-          + 'mv /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-waterfall.js ' 
-          + '/Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-waterfall.min.js'
+          + 'cp zingchart.min.js /Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client;'
+          + 'cp -r modules/* /Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client/modules;'
+          + 'mv /Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-populationpyramid.js ' 
+          + '/Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-populationpyramid.min.js;'
+          + 'mv /Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-waterfall.js ' 
+          + '/Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-waterfall.min.js'
       }
     }
   });

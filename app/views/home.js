@@ -1,11 +1,14 @@
 define(function(require, exports, module){
   var Backbone = require('backbone');
+  var InfoModel = require('../models/info');
 
   /* Overall view for the new sink */
   var KitchenSinkView = Backbone.View.extend({
     el: '#zc-kitchen-sink',
     template: _.template($('#SinkTemplate').html()),
     initialize: function(){
+      this.model = new InfoModel();
+      console.log(this.model);
       this.render(); 
     },
     events: {
@@ -44,6 +47,9 @@ define(function(require, exports, module){
 
       var val = $(event.target).val();
       var collection = router.currentView.coll;
+
+      this.model.set('theme',val);
+      console.log(this.model);
 
       router.currentView.destroyCharts();
 

@@ -17,9 +17,21 @@ body {
 .flex-item {
   margin-bottom: 60px;
   z-index: 1;
-  background-color: #fff;
+  
   
    }
+  .flex-item label:first-child {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    vertical-align: middle;
+    float: left;
+    margin-right: 6px; }
+.zingchart {
+  background-color: #fff; }
+.dark {
+  background-color: #221F1F;
+  color: rgba(255, 255, 255, 0.5); }
 .flex-options {
   height: 40px; }
 .flex-nav {
@@ -120,6 +132,7 @@ label.select-appearance {
 .btn {
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   color: #1FBBED;
   font-weight: bold;
@@ -129,15 +142,16 @@ label.select-appearance {
   padding: 0 10px;
   margin-top: 5px; }
 .aspect-select {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #1FBBED;
   font-size: 13pt;
   border-width: 1px;
   border-radius: 6px;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(0, 0, 0, 0.25);
   margin-top: 5px;
   padding: 0 10px;
   height: 30px;
+  width: 130px;
   font-weight: none;
   -webkit-appearance: none;
   -moz-appearance: none;
