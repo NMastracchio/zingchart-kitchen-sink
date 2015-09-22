@@ -54,15 +54,15 @@ module.exports = function(grunt){
         stderr: false
       },
       target: {
-        command: 'cd /Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/lib/zingchart-dev/build/;' 
-          + 'php index.php -DEV;' 
-          + 'cp zingchart.min.js /Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client;'
-          + 'cp -r modules/* /Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client/modules;'
-          + 'mv /Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-populationpyramid.js ' 
-          + '/Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-populationpyramid.min.js;'
-          + 'mv /Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-waterfall.js ' 
-          + '/Users/nicholasmastracchio/Documents/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-waterfall.min.js'
-      }
+       command: 'cd /Users/nmastracchio/Documents/ZingChart/zingchart-dev/build/;' 
+         + 'php index.php -DEV;' 
+         + 'cp zingchart.min.js /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client;'
+         + 'cp -r modules/* /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules;'
+         + 'mv /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-populationpyramid.js ' 
+         + '/Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-populationpyramid.min.js;'
+         + 'mv /Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-waterfall.js ' 
+         + '/Users/nmastracchio/Documents/Backbone/zingchart-kitchen-sink/node_modules/zingchart/client/modules/zingchart-waterfall.min.js'
+     }
     }
   });
 

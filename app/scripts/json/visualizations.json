@@ -392,7 +392,7 @@
                   "text":"Rankflow"
                   },
                 "options":{
-                  "margin":"60 0 0 0"
+                  "margin":"60 20 0 20"
                 },
                 "theme": "light",
                 "scale-x": {
@@ -400,15 +400,13 @@
                         "ON-TIME",
                         "CANCELED",
                         "BAGGAGE",
-                        "PASSENGERS",
-                        "COMPLAINTS"
+                        "PASSENGERS"
                     ],
                     "values": [
                         "ON-TIME",
                         "CANCELED",
                         "BAGGAGE",
-                        "PASSENGERS",
-                        "COMPLAINTS"
+                        "PASSENGERS"
                     ]
                 },
                 "series": [
@@ -418,8 +416,7 @@
                             3,
                             4,
                             1,
-                            2,
-                            3
+                            2
                         ],
                         "rank": 1
                     },
@@ -429,8 +426,7 @@
                             1,
                             1,
                             5,
-                            5,
-                            2
+                            5
                         ],
                         "rank": 2
                     },
@@ -440,8 +436,7 @@
                             6,
                             2,
                             6,
-                            7,
-                            1
+                            7
                         ],
                         "rank": 3
                     },
@@ -451,8 +446,7 @@
                             8,
                             8,
                             2,
-                            1,
-                            4
+                            1
                         ],
                         "rank": 4
                     },
@@ -462,8 +456,7 @@
                             4,
                             5,
                             3,
-                            3,
-                            7
+                            3
                         ],
                         "rank": 5
                     },
@@ -473,8 +466,7 @@
                             5,
                             3,
                             4,
-                            8,
-                            6
+                            8
                         ],
                         "rank": 6
                     },
@@ -484,8 +476,7 @@
                             2,
                             6,
                             7,
-                            6,
-                            8
+                            6
                         ],
                         "rank": 7
                     },
@@ -495,8 +486,7 @@
                             7,
                             7,
                             8,
-                            4,
-                            5
+                            4
                         ],
                         "rank": 8
                     }

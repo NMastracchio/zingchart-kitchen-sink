@@ -1139,39 +1139,10 @@
                         "Feb",
                         "Mar",
                         "Apr"
-                    ],
-                    "guide": {
-                        "line-width": "1px",
-                        "line-style": "solid"
-                    },
-                    "item": {
-                        "font-size": "10px",
-                        "visible": true
-                    }
+                    ]
                 },
                 "scale-y": {
-                    "values": "0:50:10",
-                    "line-width": "1px",
-                    "line-style": "solid",
-                    "tick": {
-                        "visible": true,
-                        "placement": "outer",
-                        "size": "12px"
-                    },
-                    "item": {
-                        "font-size": "10px",
-                        "visible": true
-                    },
-                    "guide": {
-                        "line-width": "1px",
-                        "line-style": "solid"
-                    }
-                },
-                "plot": {
-                    "alpha": 1,
-                    "hover-state": {
-                        "visible": false
-                    }
+                  "values": "0:50:10"
                 },
                 "series": [
                     {

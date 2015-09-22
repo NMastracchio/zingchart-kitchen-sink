@@ -1,93 +1,93 @@
 [
-  {
-    "render":{
-      "id": "countriesMap",
-      "data": {
-        "theme": "zingchart",
-        "title":{
-          "text":"Planet Earth"
-        },
-        "subtitle":{
-          "text":"Solar System, Milky Way Galaxy, Universe, Dimension C137"
-        },
-        "shapes":[
-          {
-            "type":"zingchart.maps",
-            "options":{
-              "name":"world.countries",
-              "style":{
-                "label":{
-                  "visible":false
-                }
-              }
+    {
+        "render": {
+            "id": "countriesMap",
+            "data": {
+                "theme": "zingchart",
+                "title": {
+                    "text": "Planet Earth"
+                },
+                "subtitle": {
+                    "text": "Solar System, Milky Way Galaxy, Universe, Dimension C137"
+                },
+                "shapes": [
+                    {
+                        "type": "zingchart.maps",
+                        "options": {
+                            "name": "world.countries",
+                            "style": {
+                                "label": {
+                                    "visible": false
+                                }
+                            }
+                        }
+                    }
+                ]
             }
-          }
-        ]
-      }
-    }
-  },
-  {
-    "render":{
-      "id": "usaMap",
-      "data": {
-        "theme": "zingchart",
-        "title":{
-          "text":"United States"
-        },
-        "subtitle":{
-          "text":"We offer individual country maps!"
-        },
-        "shapes":[
-          {
-            "type":"zingchart.maps",
-            "options":{
-              "name":"usa",
-              "offset-y":20,
-              "style":{
-                "label":{
-                  "visible":false
-                }
-              }
-            }
-          }
-        ]
-      }
-    }
-  },
-  {
-    "render":{
-      "id":"californiaMap",
-      "data":{
-        "theme": "zingchart",
-        "title":{
-          "text":"California Counties"
-        },
-        "subtitle":{
-          "We also have individual state maps!"
-        },
-        "shapes":[
-          {
-            "type":"zingchart.maps",
-            "options":{
-              "name":"usa_ca",
-              "zoom":0.8,
-              "offset-y":10,
-              "style":{
-                "label":{
-                  "visible":false
-                }
-              }
-            }
-          }
-        ]
-      }
-    }
-  },
-  {
-    "render":{
-      "id":"geoJson",
-      "data":{}
+        }
     },
-    "script":"./app/scripts/demo_scripts/geoJson.js"
-  }
+    {
+        "render": {
+            "id": "usaMap",
+            "data": {
+                "theme": "zingchart",
+                "title": {
+                    "text": "United States"
+                },
+                "subtitle": {
+                    "text": "We offer individual country maps!"
+                },
+                "shapes": [
+                    {
+                        "type": "zingchart.maps",
+                        "options": {
+                            "name": "usa",
+                            "offset-y": 20,
+                            "style": {
+                                "label": {
+                                    "visible": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "render": {
+            "id": "californiaMap",
+            "data": {
+                "theme": "zingchart",
+                "title": {
+                    "text": "California Counties"
+                },
+                "subtitle": {
+                    "text": "We also have individual state maps!"
+                },
+                "shapes": [
+                    {
+                        "type": "zingchart.maps",
+                        "options": {
+                            "name": "usa_ca",
+                            "zoom": 0.8,
+                            "offset-y": 10,
+                            "style": {
+                                "label": {
+                                    "visible": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "render": {
+            "id": "geoJson",
+            "data": {}
+        },
+        "script": "./app/scripts/demo_scripts/geoJson.js"
+    }
 ]

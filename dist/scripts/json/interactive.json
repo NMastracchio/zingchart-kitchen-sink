@@ -191,6 +191,9 @@
           "text":"Draggable Legend"
         },
         "legend":{
+          "header":{
+            "text":"Header"
+          },
           "draggable":true
         },
         "series":[
@@ -232,6 +235,9 @@
           "text":"Minimizable Legend"
         },
         "legend":{
+          "header":{
+            "text":"Header"
+          },
           "minimize":true
         },
         "series":[
@@ -617,7 +623,8 @@
           }
         ]
       },
-      "id":"toggleAction"
+      "id":"toggleAction",
+      "height":360
     },
     "options":{
       "select-labels":[
@@ -677,7 +684,8 @@
           }
         ]
       },
-      "id":"legendPositioning"
+      "id":"legendPositioning",
+      "height":360
     },
     "options":{
       "select-labels":[

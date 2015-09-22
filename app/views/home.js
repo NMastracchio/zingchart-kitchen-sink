@@ -8,7 +8,6 @@ define(function(require, exports, module){
     template: _.template($('#SinkTemplate').html()),
     initialize: function(){
       this.model = new InfoModel();
-      console.log(this.model);
       this.render(); 
     },
     events: {
@@ -49,7 +48,6 @@ define(function(require, exports, module){
       var collection = router.currentView.coll;
 
       this.model.set('theme',val);
-      console.log(this.model);
 
       router.currentView.destroyCharts();
 

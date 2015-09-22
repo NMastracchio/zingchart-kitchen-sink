@@ -257,9 +257,6 @@
         "title":{
             "text":"Customizable Guide Lines"
         },
-        "subtitle": {
-            "text":"(Theme may need to be modified to support differing guide line styles)"
-        },
         "scale-x":{
             "guide":{
                 "line-style":"dotted",
@@ -296,16 +293,6 @@
         "theme":"light",
         "title":{
             "text":"Font Families"
-        },
-        "scale-x":{
-            "guide":{
-                "visible":false
-            }
-        },
-        "scale-y":{
-            "guide":{
-                "line-style":"solid"
-            }
         },
         "series":[
             {

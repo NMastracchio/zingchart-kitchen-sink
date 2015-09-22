@@ -29,9 +29,8 @@ define(function(require, exports, module) {
       'integration'     : 'integration'
     },
     charts: function(){
-      this.clearIntervals();
       if (this.currentView) {
-        this.currentView.unbindEvents();  
+        this.currentView.unbindEvents();
       }
 
       this.setRouteActive('charts');
@@ -39,7 +38,6 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     maps: function(){
-      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -49,9 +47,8 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     visualizations: function(){
-      this.clearIntervals();
       if (this.currentView) {
-        this.currentView.unbindEvents();  
+        this.currentView.unbindEvents();
       }
 
       this.setRouteActive('visualizations');
@@ -59,7 +56,6 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     interactive: function(){
-      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -69,7 +65,6 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     markers: function(){
-      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -79,7 +74,6 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     design: function(){
-      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -89,7 +83,6 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     customization: function(){
-      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }
@@ -99,7 +92,6 @@ define(function(require, exports, module) {
       this.currentView = view;
     },
     integration: function(){
-      this.clearIntervals();
       if (this.currentView) {
         this.currentView.unbindEvents();  
       }

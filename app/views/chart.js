@@ -7,6 +7,7 @@ define(function(require, exports, module){
   var ChartCollectionView = Backbone.View.extend({
     el: '#zc-current-view',
     file: null,
+    coll: null,
     template: _.template($('#ChartTemplate').html()),
     initialize: function(attributes){
       var self = this;
@@ -15,13 +16,14 @@ define(function(require, exports, module){
       /* Create new collection */
       this.coll = new ChartCollection();
       /* Read chart objects from file */
-      $.getJSON(self.file, function(data) {
+      $.ajax(self.file, {
+        async: false
+      }).done(function(data){
         /* Add array of chart objects to collection */
         self.coll.add(data);
         /* Render the template */
         self.render();
       });
-      //this.listenTo(this.coll, 'add', this.render);
     },
     events: {
       'change .aspect-select': 'updateAspect',
@@ -102,7 +104,6 @@ define(function(require, exports, module){
       * If numToRender is 0, there are no charts that need to be loaded within
       * the page, so raise the shutter.
       */
-      console.log(numToRender);
       if (!numToRender) {
         window.setTimeout(function(){
           $('#loading-shutter').animate({
@@ -126,7 +127,7 @@ define(function(require, exports, module){
       return this;
     },
     unbindEvents: function(){
-      this.unbind();
+      this.undelegateEvents();
     },
     updateAspect: function(event){
       var chartId = $(event.target).attr('id').split('-')[0];
@@ -138,8 +139,10 @@ define(function(require, exports, module){
       });
 
       /* Clone the data object from the render object */
-      var modelData = _.clone(model.get('render').get('data'));
-      var modelStates = _.clone(model.get('states'));
+      if (model){
+        var modelData = _.clone(model.get('render').get('data'));
+        var modelStates = _.clone(model.get('states'));
+      }
 
       /* Switch to handle some special cases */ 
       switch(chartId){
@@ -155,7 +158,7 @@ define(function(require, exports, module){
               modelData = modelStates.ring3d.data;
               modelStates.currentType = 'ring3d';
             } else {
-              //console.log('ring2d');
+              console.log('ring2d');
               modelData = modelStates.ring2d.data;
               modelStates.currentType = 'ring2d';
             }
@@ -189,12 +192,14 @@ define(function(require, exports, module){
             modelData.series = modelStates.ogSeries;
           }
         default:
-          if (modelData.plot) {
-            modelData.plot.aspect = val;
-          } else {
-            modelData.plot = {
-              aspect: val
-            };
+          if (modelData) {
+            if (modelData.plot) {
+              modelData.plot.aspect = val;
+            } else {
+              modelData.plot = {
+                aspect: val
+              };
+            }
           }
           break;
       }
@@ -205,6 +210,7 @@ define(function(require, exports, module){
       * naturally once per model! 
       */
       model.get('render').set('data', modelData);
+      model.set('states', modelData);
       model.get('render').trigger('change');
     },
     updateChart: function(event){
@@ -218,8 +224,11 @@ define(function(require, exports, module){
       });
 
       /* Clone the data and state objects */
-      var modelData = _.clone(model.get('render').get('data'));
-      var modelStates = _.clone(model.get('states'));
+      if (model) {
+        var modelData = _.clone(model.get('render').get('data'));
+        var modelStates = _.clone(model.get('states'));
+      }
+      
 
       /* Main actions include toggling 3d, rotating. */
       switch (action) {
